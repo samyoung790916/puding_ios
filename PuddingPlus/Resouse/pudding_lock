@@ -1,0 +1,62 @@
+[
+{
+"id": 1,
+"mode": "休息",
+"mode_type": 1,
+"lock_time": 15,
+"lock_status": 0,
+"icon": "ic_lock_rest",
+"content": "布丁累了要休息一下，宝宝也看看远方让眼睛休息一下吧",
+"show_content": "布丁休息，看向远方。倒计时15分钟。1分钟后，布丁进入浅休眠状态。"
+},
+{
+"id": 2,
+"mode": "吃饭",
+"mode_type": 2,
+"lock_time": 30,
+"lock_status": 0,
+"icon": "ic_lock_meal",
+"content": "布丁累了要休息一下，宝宝也看看远方让眼睛休息一下吧",
+"show_content": "布丁休息，看向远方。倒计时15分钟。1分钟后，布丁进入浅休眠状态。"
+},
+{
+"id": 3,
+"mode": "睡觉",
+"mode_type": 3,
+"lock_time": 60,
+"lock_status": 0,
+"icon": "ic_lock_sleep",
+"content": "布丁累了要休息一下，宝宝也看看远方让眼睛休息一下吧",
+"show_content": "布丁休息，看向远方。倒计时15分钟。1分钟后，布丁进入浅休眠状态。"
+},
+{
+"id": 4,
+"mode": "刷牙",
+"mode_type": 4,
+"lock_time": 15,
+"lock_status": 0,
+"icon": "ic_lock_tooth",
+"content": "布丁累了要休息一下，宝宝也看看远方让眼睛休息一下吧",
+"show_content": "布丁休息，看向远方。倒计时15分钟。1分钟后，布丁进入浅休眠状态。"
+},
+{
+"id": 5,
+"mode": "出门",
+"mode_type": 5,
+"lock_time": 30,
+"lock_status": 0,
+"icon": "ic_lock_goout",
+"content": "布丁累了要休息一下，宝宝也看看远方让眼睛休息一下吧",
+"show_content": "布丁休息，看向远方。倒计时15分钟。1分钟后，布丁进入浅休眠状态。"
+},
+{
+"id": 6,
+"mode": "喝水",
+"mode_type": 6,
+"lock_time": 30,
+"lock_status": 0,
+"icon": "ic_lock_water",
+"content": "布丁累了要休息一下，宝宝也看看远方让眼睛休息一下吧",
+"show_content": "布丁休息，看向远方。倒计时15分钟。1分钟后，布丁进入浅休眠状态。"
+}
+]

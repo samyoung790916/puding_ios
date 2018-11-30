@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  PuddingPlus
+
+  Created by kieran on 2017/4/13.
+  Copyright © 2017年 Zhi Kuiyu. All rights reserved.
+*/
+"CFBundleDisplayName"="BeanQ";//app 名称（缺省时候名称）
+"CFBundleName"="BeanQ";//app 名称

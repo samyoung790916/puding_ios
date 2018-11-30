@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GrowthGuideViewController">
+            <connections>
+                <outlet property="collectionView" destination="rIZ-3z-g8C" id="8cU-0v-I5n"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5T-An-Ecx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="235"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_grow_bg" translatesAutoresizingMaskIntoConstraints="NO" id="JSb-8S-0wY">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="235"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_grow_x" translatesAutoresizingMaskIntoConstraints="NO" id="SCL-pt-RmW">
+                            <rect key="frame" x="257" y="69" width="100" height="96"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="Ahx-PX-bXD"/>
+                                <constraint firstAttribute="height" constant="96" id="jBW-ot-D5K"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yFd-vw-eyd">
+                            <rect key="frame" x="30" y="82.5" width="212" height="69"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="根据教育部儿童学习与发展指南小学课程,蒙台梭利定制的年度发展目标.每周更新,智能熏教." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2G-Yj-wLg">
+                                    <rect key="frame" x="15" y="13" width="182" height="43"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.55294117647058827" green="0.55294117647058827" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="a2G-Yj-wLg" firstAttribute="leading" secondItem="yFd-vw-eyd" secondAttribute="leading" constant="15" id="1sn-S4-2Vj"/>
+                                <constraint firstItem="a2G-Yj-wLg" firstAttribute="top" secondItem="yFd-vw-eyd" secondAttribute="top" constant="13" id="P9d-yT-ZUk"/>
+                                <constraint firstAttribute="bottom" secondItem="a2G-Yj-wLg" secondAttribute="bottom" constant="13" id="Q32-fe-l00"/>
+                                <constraint firstAttribute="trailing" secondItem="a2G-Yj-wLg" secondAttribute="trailing" constant="15" id="sLY-i7-wcz"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_grow_jiao" translatesAutoresizingMaskIntoConstraints="NO" id="JSS-HC-65q">
+                            <rect key="frame" x="242" y="110.5" width="7" height="12"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="yFd-vw-eyd" firstAttribute="centerY" secondItem="SCL-pt-RmW" secondAttribute="centerY" id="Cdf-J5-eW0"/>
+                        <constraint firstItem="JSS-HC-65q" firstAttribute="leading" secondItem="yFd-vw-eyd" secondAttribute="trailing" id="LXr-CC-5tC"/>
+                        <constraint firstItem="yFd-vw-eyd" firstAttribute="leading" secondItem="D5T-An-Ecx" secondAttribute="leading" constant="30" id="QOt-IM-dFo"/>
+                        <constraint firstItem="SCL-pt-RmW" firstAttribute="leading" secondItem="yFd-vw-eyd" secondAttribute="trailing" constant="15" id="XxW-a9-sot"/>
+                        <constraint firstItem="JSS-HC-65q" firstAttribute="centerY" secondItem="yFd-vw-eyd" secondAttribute="centerY" id="dyy-eF-nd5"/>
+                        <constraint firstAttribute="bottom" secondItem="SCL-pt-RmW" secondAttribute="bottom" constant="70" id="eFj-bx-Dxf"/>
+                        <constraint firstAttribute="trailing" secondItem="SCL-pt-RmW" secondAttribute="trailing" constant="18" id="iQP-zl-PUj"/>
+                        <constraint firstAttribute="height" constant="235" id="lwu-Lh-tmw"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="rIZ-3z-g8C">
+                    <rect key="frame" x="0.0" y="175" width="375" height="492"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pmJ-wL-nBc">
+                        <size key="itemSize" width="50" height="100"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="10" minY="30" maxX="10" maxY="20"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xSp-7D-4jf"/>
+                        <outlet property="delegate" destination="-1" id="MIi-YM-keM"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rIZ-3z-g8C" secondAttribute="bottom" id="01l-1h-hHp"/>
+                <constraint firstItem="D5T-An-Ecx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1rq-0s-N1d"/>
+                <constraint firstItem="rIZ-3z-g8C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7H9-5m-qey"/>
+                <constraint firstItem="rIZ-3z-g8C" firstAttribute="top" secondItem="SCL-pt-RmW" secondAttribute="bottom" constant="10" id="Mtf-NM-9BU"/>
+                <constraint firstItem="D5T-An-Ecx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QKz-fj-GHI"/>
+                <constraint firstAttribute="trailing" secondItem="D5T-An-Ecx" secondAttribute="trailing" id="hp3-mq-yLa"/>
+                <constraint firstAttribute="trailing" secondItem="rIZ-3z-g8C" secondAttribute="trailing" id="kU8-tG-6oT"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_grow_bg" width="375" height="268"/>
+        <image name="ic_grow_jiao" width="7" height="12"/>
+        <image name="ic_grow_x" width="100" height="96"/>
+    </resources>
+</document>

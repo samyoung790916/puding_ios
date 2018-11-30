@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--消息中心-->
+        <scene sceneID="Lao-Bb-E0g">
+            <objects>
+                <viewController title="消息中心" id="5ha-vP-3FX" customClass="PDMessageCenterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mus-xP-gmi"/>
+                        <viewControllerLayoutGuide type="bottom" id="oPU-lT-aQ5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tS0-uu-9Vn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4pw-1M-wTP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212.5" y="20.5"/>
+        </scene>
+        <!--图片视图-->
+        <scene sceneID="yWz-3B-nfn">
+            <objects>
+                <viewController storyboardIdentifier="PDMessageCenterImageViewController" title="图片视图" id="fhn-hh-5p7" customClass="PDMessageCenterImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KUb-dv-uf7"/>
+                        <viewControllerLayoutGuide type="bottom" id="OT6-ZV-2is"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0I3-qQ-2FB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dNq-cM-CFk" customClass="PDMessageCenterImageView">
+                                <rect key="frame" x="25" y="120" width="325" height="244"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dNq-cM-CFk" secondAttribute="height" multiplier="1:0.75" id="Hgr-Af-i3k"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TMQ-jL-qQo" customClass="PDMessageCenterImageView">
+                                <rect key="frame" x="25" y="389" width="150" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TMQ-jL-qQo" secondAttribute="height" multiplier="1:0.75" id="7Dg-PZ-8BP"/>
+                                    <constraint firstAttribute="width" secondItem="TMQ-jL-qQo" secondAttribute="height" multiplier="129:116" id="hD1-ZQ-42i"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hD1-ZQ-42i"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="deA-c9-2sV" customClass="PDMessageCenterImageView">
+                                <rect key="frame" x="200" y="389" width="150" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="deA-c9-2sV" secondAttribute="height" multiplier="129:116" id="ISP-wJ-Ixz"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ISP-wJ-Ixz"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TMQ-jL-qQo" firstAttribute="leading" secondItem="0I3-qQ-2FB" secondAttribute="leading" constant="25" id="45x-Zh-Hqp"/>
+                            <constraint firstItem="TMQ-jL-qQo" firstAttribute="top" secondItem="dNq-cM-CFk" secondAttribute="bottom" constant="25" id="7FD-uE-U9H"/>
+                            <constraint firstItem="deA-c9-2sV" firstAttribute="width" secondItem="TMQ-jL-qQo" secondAttribute="width" id="Dam-yv-Lmz"/>
+                            <constraint firstItem="deA-c9-2sV" firstAttribute="leading" secondItem="TMQ-jL-qQo" secondAttribute="trailing" constant="25" id="EKV-VW-jI1"/>
+                            <constraint firstItem="deA-c9-2sV" firstAttribute="top" secondItem="dNq-cM-CFk" secondAttribute="bottom" constant="25" id="KDf-00-0Lj"/>
+                            <constraint firstItem="dNq-cM-CFk" firstAttribute="leading" secondItem="0I3-qQ-2FB" secondAttribute="leading" constant="25" id="OtL-nD-hyD"/>
+                            <constraint firstAttribute="trailing" secondItem="deA-c9-2sV" secondAttribute="trailing" constant="25" id="Uve-ug-8fW"/>
+                            <constraint firstItem="deA-c9-2sV" firstAttribute="height" secondItem="TMQ-jL-qQo" secondAttribute="height" id="cJ9-j1-NTf"/>
+                            <constraint firstAttribute="trailing" secondItem="dNq-cM-CFk" secondAttribute="trailing" constant="25" id="tEU-q4-aTe"/>
+                            <constraint firstItem="dNq-cM-CFk" firstAttribute="top" secondItem="KUb-dv-uf7" secondAttribute="bottom" constant="100" id="xiv-Ye-Eoh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leftImg" destination="TMQ-jL-qQo" id="JGL-5o-9x7"/>
+                        <outlet property="mainImg" destination="dNq-cM-CFk" id="BLr-xT-XcR"/>
+                        <outlet property="rightImg" destination="deA-c9-2sV" id="a3t-rk-NdJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="myy-Rs-1JX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665.5" y="20.5"/>
+        </scene>
+    </scenes>
+</document>

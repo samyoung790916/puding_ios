@@ -1,0 +1,127 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - CocoaLumberjack (3.0.0):
+    - CocoaLumberjack/Default (= 3.0.0)
+    - CocoaLumberjack/Extensions (= 3.0.0)
+  - CocoaLumberjack/Core (3.0.0)
+  - CocoaLumberjack/Default (3.0.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (3.0.0):
+    - CocoaLumberjack/Default
+  - FLAnimatedImage (1.0.12)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - IQKeyboardManager (3.3.7)
+  - JSPatch (1.1.2):
+    - JSPatch/Core (= 1.1.2)
+  - JSPatch/Core (1.1.2)
+  - LKDBHelper (2.4.1):
+    - FMDB
+  - MarqueeLabel (2.5.3)
+  - Masonry (1.0.2)
+  - MJRefresh (3.1.12)
+  - PuddingVideoSDK (1.1.16):
+    - PuddingVideoSDK/RBVideo (= 1.1.16)
+    - PuddingVideoSDK/RBVideoFilter (= 1.1.16)
+  - PuddingVideoSDK/RBVideo (1.1.16)
+  - PuddingVideoSDK/RBVideoFilter (1.1.16):
+    - PuddingVideoSDK/RBVideo
+  - RBAlterView (0.1.5):
+    - YYKit (~> 1.0)
+  - RBNetwork (0.4.0):
+    - AFNetworking
+  - RBUtils (1.0.8)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - ReactiveViewModel (0.1.1):
+    - ReactiveCocoa (~> 2.1)
+  - SSZipArchive (1.7)
+  - UITableView+FDTemplateLayoutCell (1.4)
+  - UMengAnalytics-NO-IDFA (4.2.5)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - CocoaLumberjack
+  - FLAnimatedImage
+  - IQKeyboardManager
+  - JSPatch
+  - LKDBHelper
+  - MarqueeLabel (~> 2.5.0)
+  - Masonry
+  - MJRefresh
+  - PuddingVideoSDK
+  - RBAlterView (from `git@git.365jiating.com:zhikuiyu/RBAlterView.git`)
+  - RBNetwork
+  - RBUtils (from `https://github.com/baxiang/RBUtils.git`)
+  - ReactiveCocoa
+  - ReactiveViewModel (= 0.1.1)
+  - SSZipArchive
+  - UITableView+FDTemplateLayoutCell
+  - UMengAnalytics-NO-IDFA
+  - YYKit
+
+EXTERNAL SOURCES:
+  RBAlterView:
+    :git: git@git.365jiating.com:zhikuiyu/RBAlterView.git
+  RBUtils:
+    :git: https://github.com/baxiang/RBUtils.git
+
+CHECKOUT OPTIONS:
+  RBAlterView:
+    :commit: 292202e371d78d296228adaa5085a3820b4c8268
+    :git: git@git.365jiating.com:zhikuiyu/RBAlterView.git
+  RBUtils:
+    :commit: 20dd33f8517a01ab063c817c316acb726e59f4e9
+    :git: https://github.com/baxiang/RBUtils.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CocoaLumberjack: c823149bccc5519a9447aeb433be7b1212a7d6a5
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
+  JSPatch: 741205ebb2e2238c223a436e4c8cf75cf40a345f
+  LKDBHelper: 531581fa6a7d0f14236cc028ce0d277bca73436a
+  MarqueeLabel: 75141981dd9a09e591e34268753b45cb29f28cff
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+<<<<<<< HEAD
+  PuddingVideoSDK: 99de442594169be3b6671b2c4d753486180e4114
+=======
+  PuddingVideoSDK: ca6d5655ea52fbd39fe50fb502a061f66057e00e
+>>>>>>> b674a4eac728d0d848dca0f604bc1e051f481106
+  RBAlterView: fd582e79fe97112becfc4eac83a740f6d05daaed
+  RBNetwork: 6eb16531dea69ca4d552e97a4ca577d875dfa74b
+  RBUtils: e8a0ad6562b00a099f876e753284973464e2d951
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  ReactiveViewModel: 171492c2d30d3eb3c89730fd180c0f6a2ae7e774
+  SSZipArchive: 63f8e11cfcc33e03e4cd666b4359ea8bd6facd0c
+  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
+  UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 8f688f505c96048cf9b788ac74f01898534e45b3
+
+COCOAPODS: 1.1.1

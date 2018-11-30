@@ -1,0 +1,14 @@
+/* 
+  InfoPlist.strings
+  PuddingPlus
+
+  Created by kieran on 2017/4/13.
+  Copyright © 2017年 Zhi Kuiyu. All rights reserved.
+*/
+"CFBundleDisplayName"="푸딩콩";//app 名称（缺省时候名称）
+"CFBundleName"="푸딩콩";//app 名称
+
+"NSCameraUsageDescription"="프로필 이미지를 올려 주세요";
+"NSMicrophoneUsageDescription"="마이크를 켜고 푸딩에게 이야기해주세요";
+"NSPhotoLibraryAddUsageDescription"="로컬 이미지는 사용자의 프로필 사진 업로드에 사용되고 카메라 촬영 후 로컬 장치에 저장된 사진 및 영상을 확인하는데 사용됩니다.";
+"NSPhotoLibraryUsageDescription"="로컬 이미지는 사용자의 프로필 사진 업로드에 사용되고 카메라 촬영 후 로컬 장치에 저장된 사진 및 영상을 확인하는데 사용됩니다.";

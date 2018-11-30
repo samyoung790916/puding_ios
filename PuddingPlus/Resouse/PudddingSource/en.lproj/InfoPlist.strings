@@ -1,0 +1,14 @@
+/* 
+  InfoPlist.strings
+  PuddingPlus
+
+  Created by kieran on 2017/4/13.
+  Copyright © 2017年 Zhi Kuiyu. All rights reserved.
+*/
+"CFBundleDisplayName"="布丁机器人";//app 名称（缺省时候名称）
+"CFBundleName"="布丁机器人";//app 名称
+
+"NSCameraUsageDescription"="给自己来一个美美的头像";
+"NSMicrophoneUsageDescription"="打开麦克风和宝宝说会话吧";
+"NSPhotoLibraryAddUsageDescription"="获取本地图片将用于上传用户头像，查看设备拍照后保存到本地的照片和视频等";
+"NSPhotoLibraryUsageDescription"="获取本地图片将用于上传用户头像，查看设备拍照后保存到本地的照片和视频等";

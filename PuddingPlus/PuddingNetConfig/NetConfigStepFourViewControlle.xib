@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NetConfigStepFourViewControlle">
+            <connections>
+                <outlet property="progressLength" destination="fB0-Mj-V1A" id="a1B-dY-hbd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请将手机靠近设备" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61C-7p-2ky">
+                    <rect key="frame" x="20" y="361" width="178.5" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="尽量选择安静的环境,给布丁发送声波" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZ4-b9-Kq6">
+                    <rect key="frame" x="20" y="402" width="335" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.55294117649999996" green="0.55294117649999996" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_network_near" translatesAutoresizingMaskIntoConstraints="NO" id="rCI-ON-BzB">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="291"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyW-dW-Gz6">
+                    <rect key="frame" x="20" y="497" width="335" height="45"/>
+                    <color key="backgroundColor" red="0.0" green="0.80392156859999997" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="DXx-zG-300"/>
+                    </constraints>
+                    <state key="normal" title="发送声波"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="22.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nextBtnAction:" destination="-1" eventType="touchUpInside" id="bIk-A8-USF"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_network_stars" translatesAutoresizingMaskIntoConstraints="NO" id="K0j-fC-9H8">
+                    <rect key="frame" x="61" y="630" width="29" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="Vcg-5L-2WL"/>
+                        <constraint firstAttribute="width" constant="29" id="v2q-aT-VTa"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vpv-KC-lw0">
+                    <rect key="frame" x="0.0" y="659" width="375" height="8"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOE-ux-cbA">
+                            <rect key="frame" x="-10" y="0.0" width="100" height="8"/>
+                            <color key="backgroundColor" red="0.0" green="0.80392156859999997" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="fB0-Mj-V1A"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="KOE-ux-cbA" firstAttribute="top" secondItem="vpv-KC-lw0" secondAttribute="top" id="7NG-3r-PVW"/>
+                        <constraint firstItem="KOE-ux-cbA" firstAttribute="leading" secondItem="vpv-KC-lw0" secondAttribute="leading" constant="-10" id="DkN-nd-grt"/>
+                        <constraint firstAttribute="height" constant="8" id="IfF-wR-u1Z"/>
+                        <constraint firstAttribute="bottom" secondItem="KOE-ux-cbA" secondAttribute="bottom" id="fDu-Bh-ldD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="K0j-fC-9H8" firstAttribute="trailing" secondItem="KOE-ux-cbA" secondAttribute="trailing" id="4SR-eX-uOB"/>
+                <constraint firstItem="vpv-KC-lw0" firstAttribute="top" secondItem="K0j-fC-9H8" secondAttribute="bottom" id="5xy-Wk-kIs"/>
+                <constraint firstAttribute="trailing" secondItem="dyW-dW-Gz6" secondAttribute="trailing" constant="20" id="B9T-8r-6Qi"/>
+                <constraint firstAttribute="bottom" secondItem="dyW-dW-Gz6" secondAttribute="bottom" constant="125" id="EMP-po-m5t"/>
+                <constraint firstAttribute="trailing" secondItem="xZ4-b9-Kq6" secondAttribute="trailing" constant="20" id="Js1-sA-TBq"/>
+                <constraint firstItem="61C-7p-2ky" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="KZJ-S3-Fo1"/>
+                <constraint firstItem="rCI-ON-BzB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Oj0-aw-SpA"/>
+                <constraint firstItem="dyW-dW-Gz6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Ol9-l3-tAA"/>
+                <constraint firstAttribute="bottom" secondItem="vpv-KC-lw0" secondAttribute="bottom" id="UHD-YU-ee0"/>
+                <constraint firstItem="rCI-ON-BzB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UOU-0D-LHm"/>
+                <constraint firstItem="vpv-KC-lw0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hcM-e4-WxU"/>
+                <constraint firstAttribute="trailing" secondItem="vpv-KC-lw0" secondAttribute="trailing" id="igu-mv-qkb"/>
+                <constraint firstAttribute="trailing" secondItem="rCI-ON-BzB" secondAttribute="trailing" id="jI7-g2-0n4"/>
+                <constraint firstItem="xZ4-b9-Kq6" firstAttribute="top" secondItem="61C-7p-2ky" secondAttribute="bottom" constant="15" id="lhm-vI-qcc"/>
+                <constraint firstItem="61C-7p-2ky" firstAttribute="top" secondItem="rCI-ON-BzB" secondAttribute="bottom" constant="70" id="lub-Zz-xb3"/>
+                <constraint firstItem="xZ4-b9-Kq6" firstAttribute="leading" secondItem="61C-7p-2ky" secondAttribute="leading" id="uRF-jU-nFi"/>
+                <constraint firstItem="dyW-dW-Gz6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xZ4-b9-Kq6" secondAttribute="bottom" constant="50" id="y6i-NQ-F5B"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_network_near" width="375" height="291"/>
+        <image name="bg_network_stars" width="29" height="29"/>
+    </resources>
+</document>

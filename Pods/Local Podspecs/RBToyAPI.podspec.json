@@ -1,0 +1,32 @@
+{
+  "name": "RBToyAPI",
+  "version": "0.0.1",
+  "summary": "A short description of RBToyAPI.",
+  "description": "故事机业务层API",
+  "homepage": "http://git.365jiating.com/baxiang1/RToys",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "baxiang": "baxiang@roobo.com"
+  },
+  "source": {
+    "git": "ssh://baxiang@gerrit.365jiating.com:29418/project/rtoy/app/ios/RToy",
+    "tag": "0.0.1"
+  },
+  "source_files": "RBToyAPI/*.{h,m}",
+  "public_header_files": "RBToyAPI/*.h",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "7.0"
+  },
+  "dependencies": {
+    "RBNetworking": [
+
+    ],
+    "YYModel": [
+
+    ]
+  }
+}
