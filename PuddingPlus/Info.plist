@@ -39,7 +39,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.0.1</string>
+	<string>1.0.7</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>wechat</string>
@@ -53,13 +53,13 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>给自己来一个美美的头像</string>
+	<string>본인의 프로필 사진을 제공해 주세요</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>打开麦克风和宝宝说会话吧</string>
+	<string>마이크를 켜고 사용자와 대화해보세요</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>获取本地图片将用于上传用户头像，查看设备拍照后保存到本地的照片和视频等</string>
+	<string>로컬 이미지는 사용자의 프로필 사진 업로드에 사용되고 카메라 촬영 후 로컬 장치에 저장된 사진 및 영상을 확인하는데 사용됩니다</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>获取本地图片将用于上传用户头像，查看设备拍照后保存到本地的照片和视频等</string>
+	<string>로컬 이미지는 사용자의 프로필 사진 업로드에 사용되고 카메라 촬영 후 로컬 장치에 저장된 사진 및 영상을 확인하는데 사용됩니다</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
