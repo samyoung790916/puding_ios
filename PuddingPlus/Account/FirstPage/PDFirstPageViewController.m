@@ -62,7 +62,7 @@
 //    loadBackView.contentMode = UIViewContentModeScaleAspectFit;
 //    loadBackView.animatedImage = tipsAnimation;
     [self createBgColor];
-    UIImageView *bgImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    UIImageView * bgImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
     bgImageView.image = [UIImage imageNamed:@"bg_land"];
     bgImageView.contentMode = UIViewContentModeScaleAspectFill;
     [self.view addSubview:bgImageView];

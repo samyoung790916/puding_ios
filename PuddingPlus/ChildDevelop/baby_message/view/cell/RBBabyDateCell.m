@@ -32,7 +32,7 @@
     _birthday =  birthday;
     if ([birthday mStrLength] == 0){
         self.babyDateView.textColor = mRGBToColor(0xcccccc);
-        self.babyDateView.text = NSLocalizedString(@"input_baby_birthday", @"填写宝宝出生年月日");
+        self.babyDateView.text = NSLocalizedString(@"input_baby_birthday", nil);
     }else{
         self.babyDateView.textColor = mRGBToColor(0x4a4a4a);
         self.babyDateView.text = birthday;
@@ -46,7 +46,7 @@
         view.font = [UIFont systemFontOfSize:15];
         view.backgroundColor = [UIColor clearColor];
         view.textColor = mRGBToColor(0x555555);
-        view.text = NSLocalizedString(@"baby_birthary", @"宝宝生日");
+        view.text = NSLocalizedString(@"baby_birthary", nil);
         [self addSubview:view];
         
         [view mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -74,7 +74,7 @@
         view.clipsToBounds = YES;
         view.edgeInsets = UIEdgeInsetsMake(5, 20, 5, 20);
         view.textColor = mRGBToColor(0xcccccc);
-        view.text = NSLocalizedString(@"input_baby_birthday", @"填写宝宝出生年月日");
+        view.text = NSLocalizedString(@"input_baby_birthday", nil);
         view.font = [UIFont systemFontOfSize:16];
         [self addSubview:view];
 

@@ -630,7 +630,7 @@ static NSString *  const kRBMsgHandleTypeKey =@"kRBMsgHandleTypeKey";
 //
 //    deviceInfo.secret =@"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDSSwvej3JDqhN23fki0gDaNqDE\nD1g6ox+OhETOnIALCo1KIImTjy9zpZPYLAmWuqPZV+X1aAPs56tvD9m1h1wNDmqV\nlM0Tj9QlywEZX3/FKggoH5VBDlB6fCfjp+iI40eThzTGHPBI7Rj0kr10atE3WOdq\nPQFn+ZXzzjz2U/35gQIDAQAB";
 //    deviceInfo.ip_addr = @"";
-//    
+//
 //    HeartbeatInfo *info = calloc(1, sizeof(HeartbeatInfo));
 //    manager = [[PushManager alloc] init:@"netlink.roobo.net" ServerPort:7080 DeviceInfo:deviceInfo HeartBeatInfo:*info Delegate:self];
 //    free(info);
@@ -665,10 +665,9 @@ static NSString *  const kRBMsgHandleTypeKey =@"kRBMsgHandleTypeKey";
  */
 - (void)RBLoginStatus:(NSNumber *)isOnLine{
     if([isOnLine boolValue]){
-    
         [self setUpSocket];
-    }else{
-    
+    }
+    else{
         [self hangeSocket];
     }
 

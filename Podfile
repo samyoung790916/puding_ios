@@ -26,6 +26,7 @@ target 'PuddingPlus' do
 #    pod 'RBNetworking',:git => 'https://github.com/RooboMobile/RBNetworking.git'
     pod 'TheAmazingAudioEngine'
     pod 'CocoaAsyncSocket', '~> 7.6.3'
+    pod 'Firebase/Core'
 
 end
 

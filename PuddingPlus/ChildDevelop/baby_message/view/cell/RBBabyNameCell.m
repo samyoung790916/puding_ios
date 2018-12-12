@@ -46,7 +46,7 @@
         textField.delegate = self;
         textField.backgroundColor = [UIColor clearColor];
         textField.textColor = mRGBToColor(0x4a4a4a);
-        [textField setPlaceholderString:NSLocalizedString(@"input_baby_name", @"填写宝宝姓名")];
+        [textField setPlaceholderString:NSLocalizedString(@"input_baby_name", @"")];
         textField.clearButtonMode = UITextFieldViewModeWhileEditing;
         textField.autocorrectionType = UITextAutocorrectionTypeNo;
         textField.borderStyle = UITextBorderStyleNone;

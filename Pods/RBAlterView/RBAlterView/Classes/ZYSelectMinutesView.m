@@ -90,7 +90,7 @@
     cancleBtn.titleLabel.font = [UIFont systemFontOfSize:15];
     [cancleBtn setTitleColor:[UIColor colorWithRed:0.357 green:0.392 blue:0.435 alpha:1.000] forState:0];
     [cancleBtn addTarget:self action:@selector(cancelAction:) forControlEvents:UIControlEventTouchUpInside];
-    [cancleBtn setTitle:RBLocalizedString(@"取消") forState:0];
+    [cancleBtn setTitle:@"취소" forState:0];
     cancleBtn.clipsToBounds = YES;
     [_menuView addSubview:cancleBtn];
     cancleBtn.titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
@@ -106,7 +106,7 @@
     doneBtn.titleLabel.font = [UIFont systemFontOfSize:15];
     doneBtn.layer.cornerRadius = 15;
     [doneBtn setTitleColor:[UIColor whiteColor] forState:0];
-    [doneBtn setTitle:RBLocalizedString(@"确定") forState:0];
+    [doneBtn setTitle:@"완료" forState:0];
     doneBtn.clipsToBounds = YES;
     [_menuView addSubview:doneBtn];
 }

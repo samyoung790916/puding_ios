@@ -23,13 +23,13 @@
         [self loadViews];
         self.alpha = 0;
         self.isShow = NO;
-        mtuValueArray = @[NSLocalizedString( @"video_format_smooth", @"流畅"),NSLocalizedString( @"video_format_standard", @"标准"),NSLocalizedString( @"video_format_fast", @"快速"),NSLocalizedString( @"video_format_speed", @"极速")];
+        mtuValueArray = @[NSLocalizedString( @"video_format_smooth", nil),NSLocalizedString( @"video_format_standard", nil),NSLocalizedString( @"video_format_fast", nil),NSLocalizedString( @"video_format_speed", nil)];
     }
     return self;
 }
 
 + (NSString *)getMtuValue{
-     NSArray* mtuValueArray = @[NSLocalizedString( @"video_format_smooth", @"流畅"),NSLocalizedString( @"video_format_standard", @"标准"),NSLocalizedString( @"video_format_fast", @"快速"),NSLocalizedString( @"video_format_speed", @"极速")];
+     NSArray* mtuValueArray = @[NSLocalizedString( @"video_format_smooth", nil),NSLocalizedString( @"video_format_standard", nil),NSLocalizedString( @"video_format_fast", nil),NSLocalizedString( @"video_format_speed", nil)];
     return [mtuValueArray objectAtIndex: [PDSelectMtuView getCacheIndex]];
 }
 - (void)showSelectView{

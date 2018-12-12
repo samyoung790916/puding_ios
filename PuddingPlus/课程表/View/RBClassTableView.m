@@ -110,7 +110,7 @@
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     if (_mid) {
         if ([self checkIsBabyPlan:indexPath]) {
-            [MitLoadingView showErrorWithStatus:@"成长计划时段不能添加其他内容"];
+            [MitLoadingView showErrorWithStatus:@"성장 계획 시간에 기타 컨텐츠를 추가할 수 없습니다"];
             return;
         }
         if ([self checkCover:indexPath]) {
@@ -132,7 +132,7 @@
             return;
         }
         if ([self checkIsBabyPlan:indexPath]) {
-            [MitLoadingView showErrorWithStatus:@"成长计划时段不能添加其他内容"];
+            [MitLoadingView showErrorWithStatus:@"성장 계획 시간에 기타 컨텐츠를 추가할 수 없습니다"];
             return;
         }
         NSMutableArray * reloadArray = [NSMutableArray new];
@@ -208,7 +208,7 @@
     }
 }
 - (void)showAlert:(NSIndexPath*)indexPath{
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"可能会覆盖后面的课程" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"다음 수업을 커버할 수 있습니다" message:nil preferredStyle:UIAlertControllerStyleAlert];
     @weakify(self)
     UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"继续" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         @strongify(self)
@@ -227,7 +227,7 @@
 }
 - (void)showAlertForIOS7:(NSIndexPath*)indexPath{
     _selectedIndexPath = indexPath;
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"可能会覆盖后面的课程" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"继续", nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"다음 수업을 커버할 수 있습니다." message:nil delegate:self cancelButtonTitle:@"취소" otherButtonTitles:@"계속", nil];
     [alert show];
 }
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
@@ -356,7 +356,7 @@
     UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithActionBlock:^(id  _Nonnull sender) {
         UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
         if (cell.detailModel.type != 1) {
-            UIAlertAction *delAction = [UIAlertAction actionWithTitle:@"删除当天" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            UIAlertAction *delAction = [UIAlertAction actionWithTitle:@"당일 삭제하기" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 [MitLoadingView showWithStatus:@"show"];
                 [RBNetworkHandle delCourseData:[NSString stringWithFormat:@"%d",cell.detailModel._id] groupId:nil WithBlock:^(id res) {
                     @strongify(self)
@@ -405,13 +405,13 @@
     self.longTapModel = cell.detailModel;
     if (cell.detailModel.type != 1) {
         if (self.sheet1 == nil) {
-            self.sheet1 = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString( @"取消", nil) destructiveButtonTitle:nil otherButtonTitles:@"删除当天",@"删除专辑",nil];
+            self.sheet1 = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString( @"取消", nil) destructiveButtonTitle:nil otherButtonTitles:@"당일 삭제하기",@"앨범 삭제",nil];
         }
         [self.sheet1 showInView:self];
     }
     else{
         if (self.sheet2 == nil) {
-            self.sheet2 = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString( @"取消", nil) destructiveButtonTitle:nil otherButtonTitles:@"删除专辑",nil];
+            self.sheet2 = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString( @"取消", nil) destructiveButtonTitle:nil otherButtonTitles:@"앨범삭제",nil];
         }
         [self.sheet2 showInView:self];
     }

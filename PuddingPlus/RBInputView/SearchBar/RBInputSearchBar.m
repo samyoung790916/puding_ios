@@ -120,7 +120,7 @@
 }
 
 - (void)keyboardHidden:(NSNotification *)notification{
-    NSLog(@"%@",isInputType ? @"键盘":@"view");
+    NSLog(@"%@",isInputType ? @"키보드":@"view");
     
     if(self.EndInputBlock){
         self.EndInputBlock();

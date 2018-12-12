@@ -26,6 +26,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+
+    
+    
+    
     [RBStat logEvent:PD_SETTING_ACCOUNT message:nil];
     self.title = NSLocalizedString( @"my_account", nil);
     self.descArray = @[@[NSLocalizedString( @"personal_center", nil)],@[NSLocalizedString( @"clear_cache", nil)],@[NSLocalizedString( @"advice_feedback_2", nil),NSLocalizedString( @"about_app_", nil)],@[@""]];

@@ -38,7 +38,7 @@
 
     [self setAutomaticallyAdjustsScrollViewInsets:NO];
 
-    self.title = NSLocalizedString(@"class_table", @"布丁课表");
+    self.title = NSLocalizedString(@"class_table", nil);
 
     if (_mid) {
         [self createRightItemCancel];
@@ -110,7 +110,7 @@
         }
         else{
             [MitLoadingView showErrorWithStatus:RBErrorString(res)];
-            self.noNetTipString = @"网络出现问题了，请稍后再试";
+            self.noNetTipString = @"네트워크에 문제가 생겼습니다.";
             [self showNoDataView];
         }
         [MitLoadingView dismissDelay:1];

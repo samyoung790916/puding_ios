@@ -598,7 +598,7 @@ static NSString *tableIndefiter = @"tableIndefiter";
         lable.numberOfLines = 0;
         lable.font = [UIFont boldSystemFontOfSize:SX(13)];
 //        lable.textAlignment = NSTextAlignmentCenter;
-        lable.text = NSLocalizedString( @"根据教育部儿童学习与发展指南、小学课准、蒙台梭利定制的年度发展目标。每周更新，智能熏听", nil);
+        lable.text = NSLocalizedString( @"교육부 어린이 학습 및 초등학교 수업 개발 안내서, 몬테소리의 맟춤형 연간 개발 목표에 따라 진행됩니다. 매주 업데이트되는 스마트 학습법입니다!", nil);
         [self.contentView addSubview:lable];
         [lable mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(growthGuideTitleLabel.mas_left);

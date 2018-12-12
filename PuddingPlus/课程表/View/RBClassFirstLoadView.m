@@ -21,7 +21,7 @@
     [self addGestureRecognizer:tap];
     [_confirmBtn setTitle:NSLocalizedString(@"g_confirm", nil) forState:(UIControlStateNormal)];
     PDGrowplan *  growplan  = [RBDataHandle.currentDevice growplan];
-    _titleLabel.text = [NSString stringWithFormat:@"根据五大领域为[%@]定制成长指南课程,每周更新,智能熏听",growplan.nickname];
+    _titleLabel.text = [NSString stringWithFormat:@"5대 주요 영역을 베이스로 한 [%@]의 맞춤 성장 가이드 커리큘럼",growplan.nickname];
 }
 - (IBAction)confirmBtnClick:(id)sender {
 //    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"RBClassFirstLoadViewShow"];

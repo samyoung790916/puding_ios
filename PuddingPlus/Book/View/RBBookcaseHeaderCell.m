@@ -57,7 +57,7 @@
         lable.textColor = [UIColor whiteColor];
         [self addSubview:lable];
         lable.numberOfLines = 0 ;
-        lable.text = @"智能识别海量纸质绘本，翻到哪页读哪页，播音级人声讲读，纯正的英语口语，让孩子回归纸质阅读。";
+        lable.text = @"방대한 그림책을 인공지능이 인식하여 읽고 싶은 페이지를 방송 수준의 성우가 읽어주고 수수한 영어 회화를 구현합니다.  아이들이 다시 책을 읽게 도와드려요!";
         [lable mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(@(30));
             make.top.equalTo(@(70));
@@ -84,7 +84,7 @@
     [image drawInRect:CGRectMake(0, 0, self.width, SX(160))];
     
 
-    NSString * title = @"布丁绘本伴读";
+    NSString * title = @"푸딩그림책";
     NSDictionary * attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:16],
             NSForegroundColorAttributeName: [UIColor whiteColor]};
     [title drawInRect:CGRectMake(30, 46, 200, 17) withAttributes:attributes];

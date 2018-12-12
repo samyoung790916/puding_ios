@@ -37,7 +37,7 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    self.title = @"自定义歌单";
+    self.title = @"사용자 정의 노래 리스트";
     __weak typeof(self) weakself = self;
     MJRefreshNormalHeader * header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         __strong typeof(self) strongSelf = weakself;

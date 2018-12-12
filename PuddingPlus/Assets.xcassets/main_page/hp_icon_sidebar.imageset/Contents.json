@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "hp_icon_sidebar@2x.png",
+      "filename" : "hamburger@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "hp_icon_sidebar@3x.png",
+      "filename" : "hamburger@3x.png",
       "scale" : "3x"
     }
   ],

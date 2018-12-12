@@ -7,9 +7,9 @@
 //
 
 #import "RTRecorderIndicatorView.h"
-#define     STR_RECORDING       @"松开发送，上划取消"
-#define     STR_CANCEL          @"松开手指，取消发送"
-#define     STR_REC_SHORT       @"说话时间太短"
+#define     STR_RECORDING       @"릴리즈 전송, 위로 드래그하여 취소"
+#define     STR_CANCEL          @"터치를 떼고, 전송 취소"
+#define     STR_REC_SHORT       @"말하기 시간이 너무 짧습니다"
 
 @interface RTRecorderIndicatorView()
 @property (nonatomic, strong) UIView *backgroundView;

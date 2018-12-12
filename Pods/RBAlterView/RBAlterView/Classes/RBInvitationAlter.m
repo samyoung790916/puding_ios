@@ -41,7 +41,7 @@
         UIButton * cancleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
 
         [cancleBtn setTitleColor:aRGBToColor(0x6a7680) forState:UIControlStateNormal];
-        [cancleBtn setTitle:RBLocalizedString(@"取消") forState:UIControlStateNormal];
+        [cancleBtn setTitle:@"취소" forState:UIControlStateNormal];
         cancleBtn.titleLabel.font = [UIFont systemFontOfSize:15];
         [cancleBtn setBackgroundImage:[RBAPublic rbcreateImageWithColor:[UIColor whiteColor]] forState:UIControlStateNormal];
         [cancleBtn setBackgroundImage:[RBAPublic rbcreateImageWithColor:aRGBToColor(0xf7f9fa)] forState:UIControlStateHighlighted];

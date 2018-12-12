@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -51,7 +49,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="402"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cd" translatesAutoresizingMaskIntoConstraints="NO" id="c6i-X3-dDf">
-                                    <rect key="frame" x="47" y="25" width="281.5" height="282"/>
+                                    <rect key="frame" x="46.5" y="25" width="282" height="282"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="c6i-X3-dDf" secondAttribute="height" multiplier="1:1" id="yTs-UY-75B"/>
                                     </constraints>
@@ -78,7 +76,7 @@
                                     </connections>
                                 </button>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SQR-2v-d5g">
-                                    <rect key="frame" x="98.5" y="77" width="177" height="177.5"/>
+                                    <rect key="frame" x="99" y="77.5" width="177" height="177"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="SQR-2v-d5g" secondAttribute="height" multiplier="1:1" id="9el-LW-VpI"/>
                                     </constraints>
@@ -135,8 +133,8 @@
                                                 <action selector="lockBtnAction:" destination="-1" eventType="touchUpInside" id="2Hs-5E-aci"/>
                                             </connections>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="童锁关" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFp-al-XgP">
-                                            <rect key="frame" x="15" y="80" width="40" height="16"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="차이드락 끄기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFp-al-XgP">
+                                            <rect key="frame" x="-1" y="80" width="71.5" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" red="0.41568627450980389" green="0.41568627450980389" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -173,7 +171,7 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搞怪变声" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nv-wN-9CX">
-                                            <rect key="frame" x="9" y="80" width="53.5" height="16"/>
+                                            <rect key="frame" x="8.5" y="80" width="53.5" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -208,13 +206,13 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5l-BB-gUX">
-                                            <rect key="frame" x="18.5" y="48" width="33.5" height="16"/>
+                                            <rect key="frame" x="18" y="48" width="33.5" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最大音量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewP-Io-3yF">
-                                            <rect key="frame" x="9" y="80" width="53.5" height="16"/>
+                                            <rect key="frame" x="8" y="80" width="53.5" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -251,13 +249,13 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTU-XZ-zVh">
-                                            <rect key="frame" x="17.5" y="48" width="33.5" height="16"/>
+                                            <rect key="frame" x="18" y="48" width="33.5" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="灯光亮度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7b-Ln-OdD">
-                                            <rect key="frame" x="9" y="80" width="53.5" height="16"/>
+                                            <rect key="frame" x="8" y="80" width="53.5" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -294,7 +292,7 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自定义问答" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYd-bj-lA1">
-                                            <rect key="frame" x="2.5" y="80" width="66.5" height="16"/>
+                                            <rect key="frame" x="2" y="80" width="66.5" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -329,13 +327,13 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CV8-sW-VHn">
-                                            <rect key="frame" x="35.5" y="66" width="0.0" height="0.0"/>
+                                            <rect key="frame" x="35" y="66" width="0.0" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关机" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ht-hZ-K2C">
-                                            <rect key="frame" x="22" y="80" width="27" height="16"/>
+                                            <rect key="frame" x="21.5" y="80" width="27" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -453,7 +451,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y78-Qt-Qcp">
-                            <rect key="frame" x="147" y="35" width="80" height="80"/>
+                            <rect key="frame" x="147.5" y="35" width="80" height="80"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="Y78-Qt-Qcp" secondAttribute="height" multiplier="1:1" id="3MT-Ik-Y8S"/>
                             </constraints>
@@ -487,7 +485,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBR-Q2-ybM">
-                            <rect key="frame" x="169" y="145" width="36" height="36"/>
+                            <rect key="frame" x="169.5" y="145" width="36" height="36"/>
                             <state key="normal" image="icon_yinliang_pre"/>
                             <state key="highlighted" image="icon_yinliang"/>
                             <connections>
@@ -503,10 +501,10 @@
                             </connections>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DSE-p0-eKB">
-                            <rect key="frame" x="147" y="35" width="80" height="80"/>
+                            <rect key="frame" x="147.5" y="35" width="80" height="80"/>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CXk-DH-2tN">
-                            <rect key="frame" x="186.5" y="0.0" width="1" height="35"/>
+                            <rect key="frame" x="187" y="0.0" width="1" height="35"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="1" id="vmj-Dx-Wzl"/>

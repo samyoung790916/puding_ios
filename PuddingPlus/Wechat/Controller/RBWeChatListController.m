@@ -48,7 +48,7 @@
 }
 
 - (void)initNav{
-    self.title = @"语音聊天";
+    self.title = @"음성통화";
     UIButton *tipBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.navView addSubview:tipBtn];
     [tipBtn setImage:[UIImage imageNamed:@"family_setting_icon"]  forState:UIControlStateNormal];
@@ -275,7 +275,7 @@
 }
 
 - (void)audioRecordingTooShort{
-    [MitLoadingView showErrorWithStatus:@"录音时间太短"];
+    [MitLoadingView showErrorWithStatus:@"녹음시간이 너무 짧습니다."];
 }
 
 - (void)audioRecordingVolume:(float)volume{

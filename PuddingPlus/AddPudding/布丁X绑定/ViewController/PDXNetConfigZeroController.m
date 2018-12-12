@@ -71,7 +71,7 @@
             make.left.equalTo(@(SX(20)));
             make.right.equalTo(self.view.mas_right).offset(-SX(20));
         }];
-        view.text = @"长按电源键3秒";
+        view.text = @"전원버튼을 3초간 길게 누르세요";
         _desLable = view;
     }
     return _desLable;
@@ -83,7 +83,7 @@
         view.font = [UIFont systemFontOfSize:SX(22)];
         view.textColor = mRGBToColor(0x494958);
         [self.view addSubview:view];
-        view.text = @"长按电源键开机";
+        view.text = @"부팅하려면 전원 버튼을 길게 누르세요";
         [view mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.imageView.mas_bottom).offset(SX(50));
             make.left.equalTo(@(SX(20)));
@@ -117,7 +117,7 @@ static CGFloat kTxtHeight = 45;
     if (!_onButton) {
         UIButton *btn = [UIButton buttonWithType: UIButtonTypeCustom];
         btn.frame = CGRectMake(SX(kEdgePacing), SC_HEIGHT - SY(170), self.view.width - 2*SX(kEdgePacing), SX(kTxtHeight));
-        [btn setTitle:@"已经开机" forState:UIControlStateNormal];
+        [btn setTitle:@"이미켜짐" forState:UIControlStateNormal];
         btn.backgroundColor = mRGBToColor(0x00cd62);
         btn.layer.cornerRadius = btn.height *0.5;
         btn.layer.masksToBounds = true;

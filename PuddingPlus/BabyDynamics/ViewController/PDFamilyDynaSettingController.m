@@ -191,7 +191,7 @@ typedef NS_ENUM(NSInteger,PDFamilySetingType) {
 }
 - (void)showUpdatePuddingAlter{
 
-    [self.navigationController tipAlter:NSLocalizedString( @"use_small_video_take_baby_photo", nil) AlterString:R.pudding_version_low Item:@[@"以后再说",@"立即升级"] type:0 delay:0 :^(int index) {
+    [self.navigationController tipAlter:NSLocalizedString( @"use_small_video_take_baby_photo", nil) AlterString:R.pudding_version_low Item:@[@"나중에 다시 이야기해주세요",@"즉시 업데이트"] type:0 delay:0 :^(int index) {
         if(index == 1){
             PDGeneralSettingsController *vc = [[PDGeneralSettingsController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];

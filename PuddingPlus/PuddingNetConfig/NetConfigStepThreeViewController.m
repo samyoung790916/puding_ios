@@ -66,7 +66,7 @@
 }
 - (IBAction)nextBtnAction:(id)sender {
     if (self.nameTextFeild.text.length==0 || self.passwordTextFeild.text == 0) {
-        [MitLoadingView showErrorWithStatus:@"请填写完整wifi信息"];
+        [MitLoadingView showErrorWithStatus:@"와이파이 정보를 입력하세요"];
         return;
     }
     NetConfigStepFourViewControlle *vi = [[NetConfigStepFourViewControlle alloc] initWithNibName:@"NetConfigStepFourViewControlle" bundle:nil];

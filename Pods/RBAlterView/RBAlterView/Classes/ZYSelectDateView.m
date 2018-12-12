@@ -68,7 +68,7 @@
         [self addSubview:bottomView];
         
         UILabel *shi1 = [UILabel new];
-        shi1.text = RBLocalizedString(@"年");
+        shi1.text = @"년";//RBLocalizedString(@"年");
         shi1.backgroundColor = [UIColor clearColor];
         shi1.textColor = RBTimerColor;
         [self addSubview:shi1];
@@ -77,7 +77,7 @@
         shi1.lineBreakMode = NSLineBreakByTruncatingTail;
         
         UILabel *shi2 = [UILabel new];
-        shi2.text = RBLocalizedString(@"月");
+        shi2.text = @"월";//RBLocalizedString(@"月");
         shi2.textColor = RBTimerColor;
         [self addSubview:shi2];
         shi2.frame = CGRectMake(CGRectGetWidth(self.bounds) * 0.55, CGRectGetMidY(_pickerViewYear.frame) - 20, CGRectGetWidth(self.bounds) * 0.15, 40);
@@ -86,7 +86,7 @@
         
         UILabel *fen1 = [UILabel new];
         fen1.textColor = RBTimerColor;
-        fen1.text = RBLocalizedString(@"日");
+        fen1.text = @"일";//RBLocalizedString(@"日");
         [self addSubview:fen1];
         fen1.frame = CGRectMake(CGRectGetWidth(self.bounds) * 0.85, CGRectGetMidY(_pickerViewYear.frame) - 20, CGRectGetWidth(self.bounds) * 0.15, 40);
         fen1.textAlignment = NSTextAlignmentCenter;
@@ -108,7 +108,7 @@
         cancleBtn.titleLabel.font = [UIFont systemFontOfSize:15];
         [cancleBtn setTitleColor:[UIColor colorWithRed:0.357 green:0.392 blue:0.435 alpha:1.000] forState:0];
         [cancleBtn addTarget:self action:@selector(cancelAction:) forControlEvents:UIControlEventTouchUpInside];
-        [cancleBtn setTitle:RBLocalizedString(@"取消") forState:0];
+        [cancleBtn setTitle:@"취소" forState:0];
         cancleBtn.clipsToBounds = YES;
         [menuView addSubview:cancleBtn];
         
@@ -119,7 +119,7 @@
         doneBtn.titleLabel.font = [UIFont systemFontOfSize:15];
         doneBtn.layer.cornerRadius = 15;
         [doneBtn setTitleColor:[UIColor whiteColor] forState:0];
-        [doneBtn setTitle:RBLocalizedString(@"确定") forState:0];
+        [doneBtn setTitle:@"완료" forState:0];
         doneBtn.clipsToBounds = YES;
         [menuView addSubview:doneBtn];
         doneBtn.titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;

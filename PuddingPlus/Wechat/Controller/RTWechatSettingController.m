@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"关于设备";
+    self.title = @"장치정보";
     UITableView*tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, self.navView.height, self.view.width, self.view.height) style:UITableViewStyleGrouped];
     tableview.delegate  =self;
     tableview.dataSource = self;
@@ -64,7 +64,7 @@
     cell.textLabel.font = [UIFont systemFontOfSize:17];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     if (indexPath.section==0) {
-        cell.textLabel.text = @"提示音";
+        cell.textLabel.text = @"알림음";
         UISwitch *switchView = [UISwitch new];
 //        switchView.onTintColor = RTColorForBackground;
         [switchView addTarget:self action:@selector(switchMessageVoice:) forControlEvents:UIControlEventValueChanged];
@@ -72,7 +72,7 @@
         cell.accessoryView  = switchView;
     }
     if (indexPath.section ==1) {
-        cell.textLabel.text = @"清空聊天记录";
+        cell.textLabel.text = @"대화기록 삭제";
         cell.accessoryView = nil;
     }
    return cell;
@@ -103,7 +103,7 @@
 }
 
 -(void)showSelectClearView{
-    [self tipAlter:nil AlterString:@"确定清除全部聊天记录吗？" Item:@[@"取消",@"确定"] type:0 :^(int index) {
+    [self tipAlter:nil AlterString:@"모든 대화 기록을 삭제하시겠습니까？" Item:@[@"취소",@"확인"] type:0 :^(int index) {
         if (index == 1) {
             @weakify(self)
             [RBNetworkHandle clearMsg:_chatId resultBlock:^(id res) {
@@ -112,7 +112,7 @@
                     [self.viewmodle cleanAll];
                     [self.navigationController popViewControllerAnimated:YES];
                 }else{
-                    [MitLoadingView showErrorWithStatus:@"删除失败"];
+                    [MitLoadingView showErrorWithStatus:@"삭제실패"];
                 }
             }];
         }

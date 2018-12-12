@@ -40,11 +40,11 @@
     self.imageView.image = [UIImage imageNamed:@"bg_peiwang_3"];
     self.title1Lable.hidden = NO;
     
-    self.title1Lable.text = @"请去系统设置把手机连上以下WiFi";
+    self.title1Lable.text = @"시스템 설정으로 이동하여 휴대 전화를 다음 와이파이에 연결하세요";
     
-    NSMutableAttributedString *st = [[NSMutableAttributedString alloc] initWithString:@"WiFi名称：pudding-xxxx \nWiFi密码：12345678"];
-    NSRange nameRange = [st.string rangeOfString:@"WiFi名称："];
-    NSRange psdRange = [st.string rangeOfString:@"WiFi密码："];
+    NSMutableAttributedString *st = [[NSMutableAttributedString alloc] initWithString:@"와이파이 명 : pudding-xxxx \n와이파이 비밀번호 : 12345678"];
+    NSRange nameRange = [st.string rangeOfString:@"와이파이 명 : "];
+    NSRange psdRange = [st.string rangeOfString:@"와이파이 비밀번호 : "];
     [st addAttribute:NSForegroundColorAttributeName value:mRGBToColor(0x49495b) range:NSMakeRange(0,st.string.length)];
     [st addAttribute:NSForegroundColorAttributeName value:mRGBToColor(0x8d8d98) range:nameRange];
     [st addAttribute:NSForegroundColorAttributeName value:mRGBToColor(0x8d8d98) range:psdRange];
@@ -55,7 +55,7 @@
     [st addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0,st.string.length) ];
     self.net1Lable.attributedText = st;
 
-    self.title2Lable.text = @"成功连接后，请返回本应用";
+    self.title2Lable.text = @"연결 성공 후에 이 앱으로 돌아가세요";
     
     self.title2Lable.hidden = NO;
     [self.sepView setProgress:0.6 Animail:false];

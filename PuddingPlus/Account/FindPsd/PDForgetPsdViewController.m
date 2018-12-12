@@ -174,7 +174,7 @@ typedef NS_ENUM(NSUInteger, PDViewType) {
         make.top.mas_equalTo(20);
         make.height.mas_equalTo(SY(37));
     }];
-    [nationBackView addTarget:self action:@selector(nationSelectHandle) forControlEvents:UIControlEventTouchUpInside];
+//    [nationBackView addTarget:self action:@selector(nationSelectHandle) forControlEvents:UIControlEventTouchUpInside];
     UIView *seraLine = [UIView new];
     [nationBackView addSubview:seraLine];
     seraLine.backgroundColor = UIColorHex(0xd3d6db);
@@ -191,7 +191,7 @@ typedef NS_ENUM(NSUInteger, PDViewType) {
         make.left.bottom.top.mas_equalTo(0);
         make.right.mas_equalTo(seraLine.mas_left);
     }];
-    nationCodeLab.text = @"+86";
+    nationCodeLab.text = @"+82";
     nationCodeLab.textColor = UIColorHex(0x505A66);
     nationCodeLab.font = [UIFont systemFontOfSize:16];
     nationCodeLab.textAlignment = NSTextAlignmentCenter;

@@ -29,7 +29,7 @@
     self.navView.lineView.hidden = YES;
     self.navView.width = SC_WIDTH;
     self.navView.titleLab.centerX = SC_WIDTH/2;
-    self.navView.title = @"过往熏听";
+    self.navView.title = @"반복 듣기";
     self.navView.titleLab.textColor = [UIColor blackColor];
     PDNavItem *leftitem = [PDNavItem new];
     leftitem.normalImg = @"icon_back";

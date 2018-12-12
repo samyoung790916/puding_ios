@@ -98,7 +98,7 @@ void inputBufferHandler(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
                     if (dispatch_semaphore_wait(recorder.semError,DISPATCH_TIME_NOW)==0){
                         //回到主线程
                         dispatch_async(dispatch_get_main_queue(),^{
-                            [recorder postAErrorWithErrorCode:MLAudioRecorderErrorCodeAboutFile andDescription:@"写入文件失败"];
+                            [recorder postAErrorWithErrorCode:MLAudioRecorderErrorCodeAboutFile andDescription:@"파일에 기록하지 못했습니다"];
                         });
                     }
                 }
@@ -110,7 +110,7 @@ void inputBufferHandler(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
             recorder.isRecording = NO; //这里直接设置下，能防止队列中3个缓存，重复post error
             //回到主线程
             dispatch_async(dispatch_get_main_queue(),^{
-                [recorder postAErrorWithErrorCode:MLAudioRecorderErrorCodeAboutQueue andDescription:@"重准备音频输入缓存区失败"];
+                [recorder postAErrorWithErrorCode:MLAudioRecorderErrorCodeAboutQueue andDescription:@"버퍼 영역에 준비한 오디오 입력 실패"];
             });
         }
     }
@@ -130,7 +130,7 @@ void inputBufferHandler(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
     //检测麦克风权限
     NSString *mediaType = AVMediaTypeAudio;
     AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:mediaType];
-    NSString *tips = @"请在设备的\"设置-隐私-麦克风\"中允许访问麦克风。";
+    NSString *tips = @"장치의 '설정-개인 정보-마이크'애서 마이크에 대한 액세스를 허용하십시오";
     
     if(authStatus == AVAuthorizationStatusRestricted){
         SHOW_SIMPLE_TIPS(@"您的设备似乎不支持麦克风");
@@ -224,8 +224,8 @@ void inputBufferHandler(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
     
     //创建缓冲器
     for (int i = 0; i < kNumberAudioQueueBuffers; ++i){
-        IfAudioQueueErrorPostAndReturn(AudioQueueAllocateBuffer(_audioQueue, bufferByteSize, &_audioBuffers[i]),@"为音频输入队列建立缓冲区失败");
-        IfAudioQueueErrorPostAndReturn(AudioQueueEnqueueBuffer(_audioQueue, _audioBuffers[i], 0, NULL),@"为音频输入队列缓冲区做准备失败");
+        IfAudioQueueErrorPostAndReturn(AudioQueueAllocateBuffer(_audioQueue, bufferByteSize, &_audioBuffers[i]),@"오디오 입력 대기열을 위한 버퍼 생성에 실패했습니다.");
+        IfAudioQueueErrorPostAndReturn(AudioQueueEnqueueBuffer(_audioQueue, _audioBuffers[i], 0, NULL),@"오디오 입력 대기열을 위한 버퍼 준비에 실패했습니다.");
     }
     
     // 开始录音

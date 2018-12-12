@@ -105,7 +105,7 @@ float feature_min_height = 64; ///章节列表最小头图高度
     }];
 }
 - (void)setupNavView{
-    self.title = NSLocalizedString(@"detail_album", @"专辑详情");
+    self.title = NSLocalizedString(@"detail_album", nil);
     self.navView.backgroundColor = [UIColor clearColor];
     self.navView.lineView.backgroundColor = [UIColor clearColor];
     [self.navView.titleLab setTextColor:[UIColor whiteColor]] ;

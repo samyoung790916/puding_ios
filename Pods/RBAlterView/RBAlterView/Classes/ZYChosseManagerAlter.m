@@ -15,9 +15,9 @@
 
 - (id)initWithFrame:(CGRect)frame{
     if(self = [super initWithFrame:frame]){
-        self.title = RBLocalizedString(@"请选择一个管理员");
+        self.title = @"관리자를 선택하십시오";
         
-        self.bottomItems = @[RBLocalizedString(@"取消"),RBLocalizedString(@"确定")];
+        self.bottomItems = @[@"취소" ,@"완료"];
         [self addScrollView];
     }
     return self;

@@ -89,7 +89,7 @@
         UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.frame = CGRectMake(0, 0, 60, CGRectGetHeight(self.titleView.frame));
         btn.titleLabel.font = [UIFont systemFontOfSize:17];
-        [btn setTitle:NSLocalizedString( @"g_cancel", nil) forState: UIControlStateNormal];
+        [btn setTitle:@"취소" forState: UIControlStateNormal];
         [btn setTitleColor:mRGBToColor(0x505a66) forState:UIControlStateNormal];
         [self.titleView addSubview:btn];
         [btn addTarget:self action:@selector(cancelClick) forControlEvents:UIControlEventTouchUpInside];
@@ -110,7 +110,7 @@
     if (!_makeSureBtn) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.frame = CGRectMake(CGRectGetWidth(self.frame) - 60, 0, 60, CGRectGetHeight(self.titleView.frame));
-        [btn setTitle:NSLocalizedString( @"g_confirm", nil) forState: UIControlStateNormal];
+        [btn setTitle:@"완료" forState: UIControlStateNormal];
         btn.titleLabel.font = [UIFont systemFontOfSize:17];
         [btn setTitleColor:mRGBToColor(0x00aceb) forState:UIControlStateNormal];
         [self.titleView addSubview:btn];
@@ -164,7 +164,7 @@
     if (!_yearLab) {
         UILabel *year = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
         year.center = CGPointMake(SC_WIDTH/3 - 20, CGRectGetHeight(self.pickerView.frame)*0.5);
-        year.text = NSLocalizedString( @"year", nil);
+        year.text = @"년";
         year.font = [UIFont systemFontOfSize:15];
         year.textColor = mRGBToColor(0x00aceb);
         [self.pickerView addSubview:year];
@@ -179,7 +179,7 @@
     if (!_monthLab) {
         UILabel * month = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
         month.center = CGPointMake(SC_WIDTH/3*2 - 20, CGRectGetHeight(self.pickerView.frame)*0.5);
-        month.text = NSLocalizedString( @"month", nil);
+        month.text = @"월";
         month.font = [UIFont systemFontOfSize:15];
         month.textColor = mRGBToColor(0x00aceb);
         [self.pickerView addSubview:month];
@@ -193,7 +193,7 @@
     if (!_dayLab) {
         UILabel * day = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
         day.center = CGPointMake(SC_WIDTH - 20, CGRectGetHeight(self.pickerView.frame)*0.5);
-        day.text = NSLocalizedString( @"day_", nil);
+        day.text = @"일";
         day.font = [UIFont systemFontOfSize:15];
         day.textColor = mRGBToColor(0x00aceb);
         [self.pickerView addSubview:day];

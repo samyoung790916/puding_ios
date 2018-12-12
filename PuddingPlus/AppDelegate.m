@@ -23,6 +23,9 @@
 #import "ZYDeivceInfoView.h"
 #import "RTPushMessManager.h"
 
+@import Firebase;
+
+
 @interface AppDelegate ()<XHLaunchAdDelegate,RBPushServiceDelegate>
 
 @end
@@ -33,6 +36,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    [[[UIApplication sharedApplication]valueForKey:@"statusBar"]setValue:[UIColor blackColor] forKey:@"foregroundColor"];
+    
+
+    
+    
+    // samyoung79
+    // FireBase 세팅
+    [FIRApp configure];
+    
+    
+    
+    
     [[RBProjectConfig getInstanse] loadConfig];
 
     /** 设置状态栏 */
@@ -49,6 +65,11 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
      UIViewController * nav = self.window.rootViewController.navigationController;
+    
+    
+    
+    
+    
     if(TESTMODLE == true){
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [[ZYDeivceInfoView sharedInstance] setHidden:NO];
@@ -58,8 +79,44 @@
     [[RBMessageHandle sharedManager] setUpMessageHelper];
     [self setupXHLaunchAd];
     
+    
+    // samyoung79
+    NSString *libraryCachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject]; // Caches目录，需要清空目录下的内容
+    NSString *tempPath = NSTemporaryDirectory();// temp目录
+    NSString *libraryPath = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *pdlogsPath = [libraryPath stringByAppendingPathComponent:@"/PDLogs"];
+    NSLog(@"缓存清空的目录：%@、%@、%@",libraryCachePath,tempPath,pdlogsPath);
+    [self cleanFolderArray:@[libraryCachePath,tempPath,pdlogsPath]];
+    
     return YES;
 }
+
+- (void)cleanFolderArray:(NSArray *)folderArr {
+    for (NSString *folderPath in folderArr) {
+        [self clearCache:folderPath];
+    }
+}
+
+- (void)clearCache:(NSString *)path{
+    NSFileManager *fileManager=[NSFileManager defaultManager];
+    if ([fileManager fileExistsAtPath:path]) {
+        NSArray *childerFiles=[fileManager subpathsAtPath:path];
+        for (NSString *fileName in childerFiles) {
+            NSString *absolutePath=[path stringByAppendingPathComponent:fileName];
+            if ([fileManager fileExistsAtPath:absolutePath]) {
+                NSError *err = nil;
+                BOOL result = [fileManager removeItemAtPath:absolutePath error:&err];
+                if (!result) {
+                    NSLog(@"删除出错了:%@",err);
+                }
+            }
+            
+        }
+    }
+}
+
+
+
 
 - (void)trackAppDayLive{
     NSString * lastTime = [[NSUserDefaults standardUserDefaults] objectForKey:@"appsetup"];

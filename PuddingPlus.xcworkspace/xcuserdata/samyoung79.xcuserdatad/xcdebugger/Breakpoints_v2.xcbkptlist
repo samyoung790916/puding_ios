@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/BabyDynamics/ViewController/PDFamilyDynaMainController.m"
-            timestampString = "564388791.734913"
+            timestampString = "566117437.574016"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "682"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/RBInputView/ContentView/RBInputVoiceChangeView.mm"
-            timestampString = "564386718.478961"
+            timestampString = "566126178.083707"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "538"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/BabyDynamics/ViewController/PDFamilyDynaMainController.m"
-            timestampString = "564388791.735306"
+            timestampString = "566117437.574402"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "700"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/BabyDynamics/ViewController/PDFamilyDynaMainController.m"
-            timestampString = "564388791.7355829"
+            timestampString = "566117437.574636"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "659"
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/BabyDynamics/ViewController/PDFamilyDynaMainController.m"
-            timestampString = "564388791.7358479"
+            timestampString = "566117437.5748661"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "661"
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/BabyDynamics/ViewController/PDFamilyDynaMainController.m"
-            timestampString = "564388791.7361079"
+            timestampString = "566117437.575106"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "634"
@@ -154,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/BabyDynamics/ViewController/PDFamilyDynaSettingController.m"
-            timestampString = "564387480.766872"
+            timestampString = "566126178.083878"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "197"
@@ -186,7 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/BabyDynamics/ViewController/PDFamilyDynaMainController.m"
-            timestampString = "564388791.736505"
+            timestampString = "566117437.57543"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "657"
@@ -202,7 +202,7 @@
                   moduleName = "PuddingPlus"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/samyoung79/Desktop/working/ios_puding/PuddingPlus/BabyDynamics/ViewController/PDFamilyDynaMainController.m"
-                  timestampString = "565668646.136305"
+                  timestampString = "566210623.084447"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "657"
@@ -217,7 +217,7 @@
                   moduleName = "PuddingPlus"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/samyoung79/Desktop/working/ios_puding/PuddingPlus/BabyDynamics/ViewController/PDFamilyDynaMainController.m"
-                  timestampString = "565668646.1382509"
+                  timestampString = "566210623.086233"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "658"
@@ -232,7 +232,7 @@
                   moduleName = "PuddingPlus"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/samyoung79/Desktop/working/ios_puding/PuddingPlus/BabyDynamics/ViewController/PDFamilyDynaMainController.m"
-                  timestampString = "565668646.140062"
+                  timestampString = "566210623.087939"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "657"
@@ -265,11 +265,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/HomePage/ViewController/RBHomePageViewController.m"
-            timestampString = "565664917.185884"
+            timestampString = "566210622.237893"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "668"
-            endingLineNumber = "668"
+            startingLineNumber = "694"
+            endingLineNumber = "694"
             landmarkName = "-updateCurrView"
             landmarkType = "7">
          </BreakpointContent>
@@ -297,11 +297,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/HomePage/ViewController/RBHomePageViewController.m"
-            timestampString = "565664917.186372"
+            timestampString = "566210622.237998"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "624"
-            endingLineNumber = "624"
+            startingLineNumber = "650"
+            endingLineNumber = "650"
             landmarkName = "-nightAction:"
             landmarkType = "7">
          </BreakpointContent>
@@ -313,11 +313,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/HomePage/ViewController/RBHomePageViewController.m"
-            timestampString = "565664917.186608"
+            timestampString = "566210622.238063"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "461"
-            endingLineNumber = "461"
+            startingLineNumber = "487"
+            endingLineNumber = "487"
             landmarkName = "-rightBtnClick"
             landmarkType = "7">
          </BreakpointContent>
@@ -329,11 +329,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/HomePage/ViewController/RBHomePageViewController.m"
-            timestampString = "565664917.186854"
+            timestampString = "566210622.2381231"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "584"
-            endingLineNumber = "584"
+            startingLineNumber = "610"
+            endingLineNumber = "610"
             landmarkName = "-headClickAction"
             landmarkType = "7">
          </BreakpointContent>
@@ -361,11 +361,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/HomePage/ViewController/RBHomePageViewController.m"
-            timestampString = "565664917.187097"
+            timestampString = "566210622.2382081"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "331"
-            endingLineNumber = "331"
+            startingLineNumber = "357"
+            endingLineNumber = "357"
             landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
@@ -377,11 +377,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/HomePage/ViewController/RBHomePageViewController.m"
-            timestampString = "565664917.187354"
+            timestampString = "566210622.2382669"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "790"
-            endingLineNumber = "790"
+            startingLineNumber = "816"
+            endingLineNumber = "816"
             landmarkName = "-fooderClickAction:"
             landmarkType = "7">
          </BreakpointContent>
@@ -425,7 +425,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/Account/Register/ViewController/PDRegisterViewController.m"
-            timestampString = "565495167.8820651"
+            timestampString = "566114751.279617"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "247"
@@ -441,7 +441,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/Account/Register/ViewController/PDRegisterViewController.m"
-            timestampString = "565495167.882118"
+            timestampString = "566114751.279958"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "487"
@@ -457,7 +457,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/Account/Register/ViewController/PDRegisterViewController.m"
-            timestampString = "565495167.882161"
+            timestampString = "566114751.280188"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "547"
@@ -473,7 +473,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/Account/Register/ViewController/PDRegisterViewController.m"
-            timestampString = "565495167.882198"
+            timestampString = "566114751.280426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "564"
@@ -489,7 +489,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/Account/FindPsd/PDForgetPsdViewController.m"
-            timestampString = "564986316.053314"
+            timestampString = "566126178.08438"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "212"
@@ -505,7 +505,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/Account/Register/ViewController/PDRegisterViewController.m"
-            timestampString = "565495167.882259"
+            timestampString = "566114751.280683"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "217"
@@ -521,7 +521,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/Account/Register/ViewController/PDRegisterViewController.m"
-            timestampString = "565495167.882297"
+            timestampString = "566114751.280911"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "265"
@@ -553,7 +553,7 @@
                   moduleName = "PuddingPlus"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/samyoung79/Desktop/working/ios_puding/PuddingPlus/GeneralSetting/ViewController/PDGeneralSettingsController.m"
-                  timestampString = "565668646.196977"
+                  timestampString = "566210623.144034"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "635"
@@ -568,7 +568,7 @@
                   moduleName = "PuddingPlus"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/samyoung79/Desktop/working/ios_puding/PuddingPlus/GeneralSetting/ViewController/PDGeneralSettingsController.m"
-                  timestampString = "565668646.198471"
+                  timestampString = "566210623.145534"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "636"
@@ -745,7 +745,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/ChildDevelop/baby_message/ViewController/RBBabyMessageViewController.m"
-            timestampString = "565086397.876521"
+            timestampString = "566197811.5980639"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
@@ -761,7 +761,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/ChildDevelop/baby_message/ViewController/RBBabyMessageViewController.m"
-            timestampString = "565086397.876583"
+            timestampString = "566197811.598392"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
@@ -777,7 +777,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/ChildDevelop/baby_message/ViewController/RBBabyMessageViewController.m"
-            timestampString = "565086397.876633"
+            timestampString = "566197811.598634"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "88"
@@ -793,7 +793,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/ChildDevelop/baby_message/ViewController/RBBabyMessageViewController.m"
-            timestampString = "565086397.876678"
+            timestampString = "566197811.598869"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "151"
@@ -809,7 +809,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/ChildDevelop/baby_message/ViewController/RBBabyMessageViewController.m"
-            timestampString = "565086397.8767231"
+            timestampString = "566197811.599104"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "93"
@@ -889,11 +889,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/HomePage/ViewController/RBHomePageViewController.m"
-            timestampString = "565664917.187847"
+            timestampString = "566210622.238894"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "714"
-            endingLineNumber = "714"
+            startingLineNumber = "740"
+            endingLineNumber = "740"
             landmarkName = "-SwitchPudding"
             landmarkType = "7">
          </BreakpointContent>
@@ -905,7 +905,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/ChildDevelop/baby_message/ViewController/RBBabyMessageViewController.m"
-            timestampString = "565086484.066721"
+            timestampString = "566197811.599449"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "122"
@@ -921,7 +921,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/ChildDevelop/baby_message/ViewController/RBBabyMessageViewController.m"
-            timestampString = "565086485.23812"
+            timestampString = "566197811.599687"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "125"
@@ -937,7 +937,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/ChildDevelop/baby_message/ViewController/RBBabyMessageViewController.m"
-            timestampString = "565086494.169102"
+            timestampString = "566197811.59992"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "99"
@@ -953,7 +953,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/ChildDevelop/baby_message/ViewController/RBBabyMessageViewController.m"
-            timestampString = "565086495.204069"
+            timestampString = "566197811.60015"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "95"
@@ -969,7 +969,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/ChildDevelop/baby_message/ViewController/RBBabyMessageViewController.m"
-            timestampString = "565086496.520375"
+            timestampString = "566197811.6003799"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "103"
@@ -985,7 +985,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/ChildDevelop/baby_message/ViewController/RBBabyMessageViewController.m"
-            timestampString = "565086497.3418339"
+            timestampString = "566197811.600611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "107"
@@ -1000,28 +1000,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PuddingPlus/ChildDevelop/baby_message/ViewController/RBBabyMessageViewController.m"
-            timestampString = "565086500.277725"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "-doneBtnClick"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "PuddingPlus/HomePage/ViewController/RBHomePageViewController.m"
-            timestampString = "565664917.188151"
+            timestampString = "566210622.239077"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "822"
-            endingLineNumber = "822"
+            startingLineNumber = "848"
+            endingLineNumber = "848"
             landmarkName = "-fooderClickAction:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1049,7 +1033,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/RBInputView/ContentView/RBInputMultimediaExpressView.m"
-            timestampString = "565667008.033047"
+            timestampString = "566120667.033385"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "87"
@@ -1065,7 +1049,7 @@
                   moduleName = "PuddingPlus"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/samyoung79/Desktop/working/ios_puding/PuddingPlus/RBInputView/ContentView/RBInputMultimediaExpressView.m"
-                  timestampString = "565668646.350103"
+                  timestampString = "566210623.37239"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "87"
@@ -1080,7 +1064,7 @@
                   moduleName = "PuddingPlus"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/samyoung79/Desktop/working/ios_puding/PuddingPlus/RBInputView/ContentView/RBInputMultimediaExpressView.m"
-                  timestampString = "565668646.351607"
+                  timestampString = "566210623.373924"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "87"
@@ -1177,7 +1161,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuddingPlus/AddPudding/&#x5e03;&#x4e01;X&#x7ed1;&#x5b9a;/ViewController/PDXNetConfigTwoController.m"
-            timestampString = "565495167.883042"
+            timestampString = "566126178.085654"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "212"
@@ -1200,6 +1184,517 @@
             endingLineNumber = "1472"
             landmarkName = "doesAppRunInBackground"
             landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/AppDelegate.m"
+            timestampString = "566210622.2393171"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "-application:didRegisterForRemoteNotificationsWithDeviceToken:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/ChildDevelop/baby_message/ViewController/RBBabyMessageViewController.m"
+            timestampString = "566197811.601166"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "-doneBtnClick"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/ChildDevelop/baby_message/ViewController/RBBabyMessageViewController.m"
+            timestampString = "566197811.601404"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
+            landmarkName = "-loadBabyInfoData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/ChildDevelop/baby_message/ViewController/RBBabyMessageViewController.m"
+            timestampString = "566197811.6016411"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "307"
+            endingLineNumber = "307"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RBAlterView/RBAlterView/Classes/PDInviteView.m"
+            timestampString = "566126178.085976"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "-initWithFrame:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RBAlterView/RBAlterView/Classes/RBInvitationAlter.m"
+            timestampString = "566126178.08602"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "-initWithFrame:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RBAlterView/RBAlterView/Classes/ZYChosseManagerAlter.m"
+            timestampString = "566126178.0860651"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "-initWithFrame:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RBAlterView/RBAlterView/Classes/ZYSelectGradeView.m"
+            timestampString = "566126178.086108"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "-cancleButton"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RBAlterView/RBAlterView/Classes/ZYSelectMinutesView.m"
+            timestampString = "566126178.0861501"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "-cancleButton"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RBAlterView/RBAlterView/Classes/ZYSelectTimerView.m"
+            timestampString = "566126178.086208"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "-initWithFrame:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/YYKit/YYKit/Text/YYTextView.m"
+            timestampString = "566117581.875867"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1748"
+            endingLineNumber = "1748"
+            landmarkName = "-_localizedUndoStrings"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/ManageMembers/ViewController/RBPuddingUserManagerViewController.m"
+            timestampString = "566210622.2401659"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "-loadData:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/ManageMembers/ViewController/RBPuddingUserManagerViewController.m"
+            timestampString = "566210622.240219"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "346"
+            endingLineNumber = "346"
+            landmarkName = "-editListData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/ManageMembers/ViewController/RBPuddingUserManagerViewController.m"
+            timestampString = "566210622.2402641"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "352"
+            endingLineNumber = "352"
+            landmarkName = "-editListData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/ManageMembers/ViewController/RBPuddingUserManagerViewController.m"
+            timestampString = "566210622.240307"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "364"
+            endingLineNumber = "364"
+            landmarkName = "-editListData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/ManageMembers/ViewController/RBPuddingUserManagerViewController.m"
+            timestampString = "566210622.2403491"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "487"
+            endingLineNumber = "487"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[RBPuddingUserManagerViewController tableView:cellForRowAtIndexPath:]"
+                  moduleName = "PuddingPlus"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samyoung79/Desktop/working/ios_puding/PuddingPlus/ManageMembers/ViewController/RBPuddingUserManagerViewController.m"
+                  timestampString = "566210623.446468"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "487"
+                  endingLineNumber = "487"
+                  offsetFromSymbolStart = "556">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[RBPuddingUserManagerViewController tableView:cellForRowAtIndexPath:]"
+                  moduleName = "PuddingPlus"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samyoung79/Desktop/working/ios_puding/PuddingPlus/ManageMembers/ViewController/RBPuddingUserManagerViewController.m"
+                  timestampString = "566210623.448128"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "487"
+                  endingLineNumber = "487"
+                  offsetFromSymbolStart = "632">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/ManageMembers/View/PDManageMembersCell.m"
+            timestampString = "566210622.240393"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "-setDataSource:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/ManageMembers/View/PDManageMembersCell.m"
+            timestampString = "566210622.240433"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
+            landmarkName = "-setDataSource:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/HomePage/View/SideView/PDSidePuddingUserCell.m"
+            timestampString = "566124165.4068919"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "-iconImage"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/Account/Register/ViewController/PDRegisterUpHeadImageController.m"
+            timestampString = "566124157.5959001"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "-doneAction:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/ManageMembers/View/PDManageMembersCell.m"
+            timestampString = "566210622.240521"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "-setDataSource:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[PDManageMembersCell setDataSource:]"
+                  moduleName = "PuddingPlus"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samyoung79/Desktop/working/ios_puding/PuddingPlus/ManageMembers/View/PDManageMembersCell.m"
+                  timestampString = "566210623.46489"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "197"
+                  endingLineNumber = "197"
+                  offsetFromSymbolStart = "2352">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__37-[PDManageMembersCell setDataSource:]_block_invoke"
+                  moduleName = "PuddingPlus"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samyoung79/Desktop/working/ios_puding/PuddingPlus/ManageMembers/View/PDManageMembersCell.m"
+                  timestampString = "566210623.466548"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "198"
+                  endingLineNumber = "198"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.213"
+                  moduleName = "PuddingPlus"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samyoung79/Desktop/working/ios_puding/PuddingPlus/ManageMembers/View/PDManageMembersCell.m"
+                  timestampString = "566210623.468196"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "197"
+                  endingLineNumber = "197"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/ManageMembers/View/PDManageMembersCell.m"
+            timestampString = "566210622.240562"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
+            landmarkName = "-setDataSource:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/ManageMembers/ViewController/RBPuddingUserManagerViewController.m"
+            timestampString = "566210622.240602"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "-getNetUsers:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/RBUtiles/RBNetUtil/RBNetworkHandle+bind_device.m"
+            timestampString = "566210622.240646"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "+getRooboInfoWithCtrlID::"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/PersonalCenter/ViewController/PDMyAccountViewController.m"
+            timestampString = "566210622.24069"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "-cleanCacheAction"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/Account/Login/ViewController/PDLoginViewController.m"
+            timestampString = "566207531.0873311"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuddingPlus/RBUtiles/RBNetUtil/RBNetworkHandle+bind_device.m"
+            timestampString = "566210622.2407711"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "+getRooboInfoWithCtrlID::"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -76,22 +76,22 @@
     NSMutableArray *array = [NSMutableArray array];
     NSMutableArray *images = [NSMutableArray array];
     if ((_model.fid != nil && [_model.fid integerValue] > 0)) {
-        [array addObject:@"已收藏"];
+        [array addObject:@"저장됨"];
         [images addObject:@"icon_shoucang_sel"];
     }
     else{
-        [array addObject:@"收藏"];
+        [array addObject:@"저장"];
         [images addObject:@"icon_shoucang"];
     }
     if (_isDIYAlbum) {
-        [array addObject:@"从自定义歌单删除"];
+        [array addObject:@"사용자 지정 노래 목록에서 제거"];
     }
     else{
-        [array addObject:@"添加到自定义歌单"];
+        [array addObject:@"사용자 지정 노래 목록에 추가"];
     }
     [images addObject:@"icon_tianjia_pre"];
     @weakify(self)
-    [[self viewController] showSheetWithItems:array Images:images Title:[NSString stringWithFormat:@"单曲:%@",_model.name] CancelTitle:@"取消" WithBlock:^(int selectIndex) {
+    [[self viewController] showSheetWithItems:array Images:images Title:[NSString stringWithFormat:@"싱글곡:%@",_model.name] CancelTitle:@"취소" WithBlock:^(int selectIndex) {
         @strongify(self)
         switch (selectIndex) {
             case 0:
@@ -133,13 +133,13 @@
     [RBNetworkHandle addOrDelAlbumresource:!_isDIYAlbum SourceID:_model.mid AlbumId:RBDataHandle.currentDevice.albumId andBlock:^(id res) {
         if ([[res objectForKey:@"result"] integerValue] == 0) {
             if (_isDIYAlbum) {
-                [MitLoadingView showSuceedWithStatus:@"删除成功"];
+                [MitLoadingView showSuceedWithStatus:@"삭제성공"];
                 if (_delCallBack) {
                     _delCallBack();
                 }
             }
             else{
-                [MitLoadingView showSuceedWithStatus:@"加入成功"];
+                [MitLoadingView showSuceedWithStatus:@"가입성공"];
             }
         }
         else{

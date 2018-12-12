@@ -40,7 +40,7 @@
             make.centerX.mas_equalTo(self.tipImageView.mas_centerX).offset(1);
             make.centerY.mas_equalTo(self.tipImageView.mas_centerY).offset(-2);
         }];
-        tipLabel.text = @"语言";
+        tipLabel.text = @"언어";
         if (IPHONE_4S_OR_LESS) {
             tipLabel.font = [UIFont systemFontOfSize:10];
         }else{

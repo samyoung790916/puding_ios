@@ -65,7 +65,7 @@
             make.left.equalTo(@(SX(20)));
             make.right.equalTo(self.view.mas_right).offset(-SX(20));
         }];
-        view.text = @"请按配网键，进入联网模式。";
+        view.text = @"네트워크 설정 버튼을 클릭하여 네트워크 모드에 들어가세요";
         _desLable = view;
     }
     return _desLable;
@@ -77,7 +77,7 @@
         view.font = [UIFont systemFontOfSize:SX(22)];
         view.textColor = mRGBToColor(0x494958);
         [self.view addSubview:view];
-        view.text = @"长按配网键";
+        view.text = @"네트워크 설정 버튼을 길게 누릅니다.";
         [view mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.imageView.mas_bottom).offset(SX(50));
             make.left.equalTo(@(SX(20)));
@@ -111,7 +111,7 @@ static CGFloat kTxtHeight = 45;
     if (!_onButton) {
         UIButton *btn = [UIButton buttonWithType: UIButtonTypeCustom];
         btn.frame = CGRectMake(SX(kEdgePacing), SC_HEIGHT - SY(170), self.view.width - 2*SX(kEdgePacing), SX(kTxtHeight));
-        [btn setTitle:@"开始配网" forState:UIControlStateNormal];
+        [btn setTitle:@"네트워크 설정 시작" forState:UIControlStateNormal];
         btn.backgroundColor = mRGBToColor(0x00cd62);
         btn.layer.cornerRadius = btn.height *0.5;
         btn.layer.masksToBounds = true;

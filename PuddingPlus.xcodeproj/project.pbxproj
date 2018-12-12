@@ -174,6 +174,7 @@
 		38C727461DAB84AE00162A40 /* RBQRScanOverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C727431DAB84AE00162A40 /* RBQRScanOverView.m */; };
 		38C727471DAB84AE00162A40 /* RBQRScanViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 38C727451DAB84AE00162A40 /* RBQRScanViewController.mm */; };
 		38C7274A1DAB872400162A40 /* UIViewController+QRSacn.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C727491DAB872400162A40 /* UIViewController+QRSacn.m */; };
+		4A7197BF21B7C26E0092C3E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A7197BE21B7C26E0092C3E3 /* GoogleService-Info.plist */; };
 		89048B7E1E19E680006931F6 /* PDPersonalCenterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89048B711E19E680006931F6 /* PDPersonalCenterModel.m */; };
 		89048B7F1E19E680006931F6 /* PDPersonalCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89048B741E19E680006931F6 /* PDPersonalCenterCell.m */; };
 		89048B801E19E680006931F6 /* PDModifyPhoneNumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89048B771E19E680006931F6 /* PDModifyPhoneNumViewController.m */; };
@@ -1016,6 +1017,7 @@
 		38C727481DAB872400162A40 /* UIViewController+QRSacn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+QRSacn.h"; sourceTree = "<group>"; };
 		38C727491DAB872400162A40 /* UIViewController+QRSacn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+QRSacn.m"; sourceTree = "<group>"; };
 		4A498B5E21B0C0C600F76F9C /* PuddingPushServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PuddingPushServer.entitlements; sourceTree = "<group>"; };
+		4A7197BE21B7C26E0092C3E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4AAE46FB219D611600C2EE9E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4AAE46FC219D611600C2EE9E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		80932B9E062682CA8E73FDE6 /* Pods-PuddingPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuddingPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuddingPlus/Pods-PuddingPlus.release.xcconfig"; sourceTree = "<group>"; };
@@ -2187,6 +2189,7 @@
 		3822F9D01D9382DE0087CE32 /* PuddingPlus */ = {
 			isa = PBXGroup;
 			children = (
+				4A7197BE21B7C26E0092C3E3 /* GoogleService-Info.plist */,
 				8972A8421E601A1F00BDEC82 /* PuddingPlus.entitlements */,
 				B62B5D4D20DCA45000E8CAF0 /* GrowthGuide */,
 				B6CFB20420D25A0E00A52A73 /* MyRobot */,
@@ -5163,6 +5166,7 @@
 			files = (
 				894F18B41F10CF2100C8B082 /* pudding_lock in Resources */,
 				B6CFB1F920D0F01100A52A73 /* RBThreeBtnCollectionReusableView.xib in Resources */,
+				4A7197BF21B7C26E0092C3E3 /* GoogleService-Info.plist in Resources */,
 				B626AF0720AED45A00F24B78 /* NetConfigStepFourViewControlle.xib in Resources */,
 				B62B5D5A20DCA49600E8CAF0 /* GrowthGuideHistoryViewController.xib in Resources */,
 				89811E7320F462EF00E8B710 /* message.mp3 in Resources */,

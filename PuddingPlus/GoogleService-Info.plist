@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>154187385369-hfu0qjmdlhhcvincda5me0b24g8gumq5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.154187385369-hfu0qjmdlhhcvincda5me0b24g8gumq5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCYPLrp5yNAI8m61nshBb4DcMu4ePSPKQw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>154187385369</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.1thefull.pudding1s</string>
+	<key>PROJECT_ID</key>
+	<string>wonderful-pudingkong</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wonderful-pudingkong.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:154187385369:ios:414bb66cd384d288</string>
+	<key>DATABASE_URL</key>
+	<string>https://wonderful-pudingkong.firebaseio.com</string>
+</dict>
+</plist>

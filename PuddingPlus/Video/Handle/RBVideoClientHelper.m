@@ -1120,33 +1120,33 @@
         } else if (code1 == LOGIN_FAIL) {
             NSLog(@"登录失败"); //比如帐号密码错误
             [_liveClient stop];
-            str = @"登录失败";
+            str = @"로그인 실패";
         } else if (code1 == LOGIN_TIMEOUT) {
             NSLog(@"登录超时");
             [_liveClient stop];
-            str = @"登录超时";
+            str = @"로그인 시간 초과";
         } else if (code1 == CONNECTED) {
             NSLog(@"连接设备成功");
         } else if (code1 == DISCONNECTED) {
             NSLog(@"与设备断开连接");
             [_liveClient stop];
-            str = @"与设备断开连接";
+            str = @"장치 연결 끊기";
         } else if (code1 == DEVICE_OFFLINE) {
             NSLog(@"设备不在线");
             [_liveClient stop];
-            str = @"设备不在线";
+            str = @"장치가 오프라인 입니다";
         } else if (code1 == UID_ERROR) {
             NSLog(@"设备ID错误");
             [_liveClient stop];
-            str = @"设备ID错误";
+            str = @"장치 ID 오류";
         } else if (code1 == NETWORK_ERROR) {
             NSLog(@"网络错误");
             [_liveClient stop];
-            str = @"网络错误";
+            str = @"네트워크 오류";
         } else if (code1 == UNKOWN_ERROR) {
             NSLog(@"未知错误");
             [_liveClient stop];
-            str = @"未知错误";
+            str = @"알수없는 오류";
         }
         if (![str isEqualToString:@""]) {
             [self needReconnect];
@@ -1155,7 +1155,7 @@
     } else if (type == CLIENT_EVENT) {
         if (code1 == REMOTE_BUSY) {
             NSLog(@"设备忙，语音对讲失败");
-            [MitLoadingView showErrorWithStatus:@"宝宝正在视频通话中，请稍后再试"];
+            [MitLoadingView showErrorWithStatus:@"아이가 지금 영상통화 중입니다. 잠시후 시도해 주세요"];
 //            [self needReconnect];
         }else if (code1 == REMOTE_HANGUP) {
             NSLog(@"REMOTE_HANGUP");
@@ -1253,7 +1253,7 @@
     }
     liveLocalAudioEnable = false;
     [_liveClient setEnableAudioSend:liveLocalAudioEnable];
-    [MitLoadingView showErrorWithStatus:@"对方断开了视频"];
+    [MitLoadingView showErrorWithStatus:@"상대방이 영상 통화를 끊었습니다."];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"disConnectVideo" object:nil];
 }
 @end

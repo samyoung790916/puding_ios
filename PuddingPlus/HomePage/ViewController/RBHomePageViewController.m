@@ -201,13 +201,30 @@
     CGRect frame = [[UIScreen mainScreen]bounds];
     
     
-    UIView * topBar = [[UIView alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, 60)];
-    [topBar setBackgroundColor:[UIColor blackColor]];
+
+    
+    bool bIsX = IS_IPHONE_X;
+    int nHeight = 0;
+    int nY = 0;
+    
+    if(bIsX == YES){
+         nHeight = 84;
+         nY = 40;
+        
+    }
+    else{
+         nHeight = 60;
+        nY = 20;
+
+    }
+    
+    UIView * topBar = [[UIView alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, nHeight)];
+    [topBar setBackgroundColor:[UIColor whiteColor]];
     [_contentView addSubview:topBar];
     
     
    
-    _webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, 60, frame.size.width, frame.size.height - 60) configuration:config];
+    _webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, nHeight, frame.size.width, frame.size.height - nHeight) configuration:config];
     
     
 
@@ -277,23 +294,32 @@
 //    else{
 //        self.mainHeadView.height = HOME_HEAD_HEIGHT;
 //    }
-    UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(SX(4) ,STATE_HEIGHT, 44, 44)];
+    UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(SX(4) ,nY, 44, 44)];
+    
+    
+    int a = SX(4);
+    int b = STATE_HEIGHT;
+    
+    
     [leftButton setImage:[UIImage imageNamed:@"hp_icon_sidebar"] forState:0];
     leftButton.contentMode  = UIViewContentModeScaleToFill;
     [leftButton addTarget:self action:@selector(sideMenuAction) forControlEvents:UIControlEventTouchUpInside];
-    [_contentView addSubview:leftButton];
+    [topBar addSubview:leftButton];
+    
+    
     _leftButton = leftButton;
-    UILabel *naviTitle = [[UILabel alloc] initWithFrame:CGRectMake((_contentView.width- 200)/2, STATE_HEIGHT, 200, SX(44))];
+    UILabel *naviTitle = [[UILabel alloc] initWithFrame:CGRectMake((_contentView.width- 200)/2, nY, 200, SX(44))];
     naviTitle.font = [UIFont systemFontOfSize:18.0f];
     naviTitle.backgroundColor = [UIColor clearColor];
+    naviTitle.textColor = [UIColor blackColor];
     if (RBDataHandle.currentDevice.isStorybox) {
         naviTitle.textColor = RGB(73, 73, 91);
     }
     else{
-        naviTitle.textColor = [UIColor whiteColor];
+        naviTitle.textColor = [UIColor blackColor];
     }
     naviTitle.textAlignment = NSTextAlignmentCenter;
-    [_contentView addSubview:naviTitle];
+    [topBar addSubview:naviTitle];
     self.naviTitle = naviTitle;
 
     UIButton *rightBtn = [UIButton new];
@@ -304,9 +330,9 @@
         [rightBtn setImage:[UIImage imageNamed:@"hp_icon_collection"] forState:UIControlStateNormal];
     }
     [rightBtn addTarget:self action:@selector(rightBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    [_contentView addSubview:rightBtn];
+    [topBar addSubview:rightBtn];
     [rightBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(STATE_HEIGHT);
+        make.top.mas_equalTo(nY);
         make.width.mas_equalTo(44);
         make.height.mas_equalTo(44);
         make.right.mas_equalTo(-7);
@@ -318,11 +344,11 @@
     [nightButton setImage:[UIImage imageNamed:@"hp_icon_nightmoon"] forState:UIControlStateNormal];
     nightButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
     [nightButton addTarget:self action:@selector(nightAction:) forControlEvents:UIControlEventTouchUpInside];
-    [_contentView addSubview:nightButton];
+    [topBar addSubview:nightButton];
     [nightButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.height.mas_equalTo(44);
         make.right.mas_equalTo(rightBtn.mas_left);
-        make.top.mas_equalTo(STATE_HEIGHT);
+        make.top.mas_equalTo(nY);
     }];
     self.nightButton = nightButton;
 
@@ -674,7 +700,7 @@
     }
     else{
         _naviTitle.text = RBDataHandle.currentDevice.name;
-        _naviTitle.textColor = [UIColor whiteColor];
+        _naviTitle.textColor = [UIColor blackColor];
         _mainHeadView.height = HOME_HEAD_HEIGHT;
         _mainHeadView.backgroundView.hidden = NO;
         [_leftButton setImage:[UIImage imageNamed:@"hp_icon_sidebar"] forState:UIControlStateNormal];

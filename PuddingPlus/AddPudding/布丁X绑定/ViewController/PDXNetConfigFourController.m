@@ -35,8 +35,8 @@
     self.onButton.hidden = YES;
     self.imageView.image = [UIImage imageNamed:@"bg_peiwang_7"];
     
-    self.titleLable.text = @"网络连接中，请耐心等待...";
-    self.desLable.text = @"设备联网需要一段时间，请耐心等待，听到设备提示音后，请根据语音提示选择";
+    self.titleLable.text = @"네트워크 연결 중입니다 기다려 주십시오...";
+    self.desLable.text = @"장치가 네트워크에 연결까지 시간이 소요됩니다. 잠시만 기다려 주십시오. 장치알림이 나오면 음성 알림에 따라 선택하세요.";
     
     [self setNavStyle:PDNavStyleAddPuddingX];
     [self.sepView setProgress:1.0 Animail:false];
@@ -84,7 +84,7 @@
             make.left.equalTo(@(SX(20)));
             make.right.equalTo(self.view.mas_right).offset(-SX(20));
         }];
-        view.text = @"请帮我接通电源，长按电源键2秒";
+        view.text = @"연결 전원 버튼을 켜주세요. 2초동안 길게 전원 버튼을 누르세요.";
         _desLable = view;
     }
     return _desLable;
@@ -96,7 +96,7 @@
         view.font = [UIFont systemFontOfSize:SX(22)];
         view.textColor = mRGBToColor(0x494958);
         [self.view addSubview:view];
-        view.text = @"长按电源键开机";
+        view.text = @"부팅하려면 전원 버튼을 길게 누르세요.";
         [view mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.imageView.mas_bottom).offset(SX(50));
             make.left.equalTo(@(SX(20)));
@@ -241,7 +241,7 @@ static const CGFloat kMaxTimeOutTime = 50;
     }];
 }
 - (void)popRecommond{
-    [MitLoadingView showSuceedWithStatus:@"绑定成功"];
+    [MitLoadingView showSuceedWithStatus:@"연결(페어링) 성공"];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.navigationController popToRootViewControllerAnimated:YES];
     });
@@ -255,7 +255,7 @@ static const CGFloat kMaxTimeOutTime = 50;
     LogWarm(@"configResult = %@",configResult);
     //没有管理员但是绑定失败的情况
     if ([configResult isEqualToString:@"failure"]) {
-        [MitLoadingView showErrorWithStatus:@"网络配置失败，请重试"];
+        [MitLoadingView showErrorWithStatus:@"네트워크 설정에 실패했습니다. 다시 시도해 주세요"];
         self.onButton.hidden = NO;
         return;
     }

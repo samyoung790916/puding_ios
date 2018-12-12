@@ -129,7 +129,7 @@
                     NSNumber *time = [dic objectForKey:@"timer"];
                     double timer = [RBNetworkHandle getCurrentTimeInterval] + [time intValue];
                     NSString *closeStr = [self timeWithTimeIntervalString:timer];
-                    self.closeTimerLabel.text = [NSString stringWithFormat:@"%@关机",closeStr];
+                    self.closeTimerLabel.text = [NSString stringWithFormat:@"%@종료",closeStr];
                 }
             }
         }
@@ -276,7 +276,7 @@
 - (IBAction)loveAction:(id)sender {
     [RBStat logEvent:PD_PlayDetail_Play_Collect message:nil];
     if (RBDataHandle.currentDevice.playinfo.fav_able == nil || [RBDataHandle.currentDevice.playinfo.fav_able integerValue] == 0) {
-        [MitLoadingView showErrorWithStatus:@"此单曲无法收藏"];
+        [MitLoadingView showErrorWithStatus:@"이 노래는 저장할 수 없습니다."];
         return;
     } else {
         PDFeatureModle *finalModel = [[PDFeatureModle alloc] init];
@@ -406,7 +406,7 @@
     }
     [RBNetworkHandle addOrDelAlbumresource:YES SourceID:mid AlbumId:RBDataHandle.currentDevice.albumId andBlock:^(id res) {
         if ([[res objectForKey:@"result"] integerValue] == 0) {
-            [MitLoadingView showSuceedWithStatus:@"加入自定义歌单成功"];
+            [MitLoadingView showSuceedWithStatus:@"사용자 노래 리스트 설정에 성공했습니다."];
         }
         else{
             [MitLoadingView showErrorWithStatus:RBErrorString(res)];
@@ -427,8 +427,8 @@
     [RBNetworkHandle setLockDevice:!_lockBtn.isSelected WithBlock:^(id res) {
         if ([[res objectForKey:@"result"] integerValue] == 0) {
             _lockBtn.selected = !_lockBtn.isSelected;
-            _lockLabel.text = _lockBtn.isSelected?@"童锁开":@"童锁关";
-            [MitLoadingView showSuceedWithStatus:@"设置成功"];
+            _lockLabel.text = _lockBtn.isSelected?@"차일드락 켜기":@"차일드락 끄기";
+            [MitLoadingView showSuceedWithStatus:@"설정하기 성공"];
             RBDeviceModel *device = RBDataHandle.currentDevice;
             device.isChildLockOn = [NSNumber numberWithBool:_lockBtn.selected];
             [RBDataHandle setCurrentDevice:device];
@@ -442,14 +442,14 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         _changeVoiceBtn.highlighted = YES;
     });
-    [MitLoadingView showErrorWithStatus:@"新功能，敬请期待"];
+    [MitLoadingView showErrorWithStatus:@"새로운 기능，기대해 주세요"];
     return;
 }
 - (IBAction)maxSoundLevelBtnAction:(id)sender {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         _maxVoiceBtn.highlighted = YES;
     });
-    [MitLoadingView showErrorWithStatus:@"新功能，敬请期待"];
+    [MitLoadingView showErrorWithStatus:@"새로운 기능，기대해 주세요"];
     return;
 //    NSArray *array = @[@"40%",@"60%",@"80%",@"100%"];
 //    @weakify(self)
@@ -462,7 +462,7 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         _maxLightnessBtn.highlighted = YES;
     });
-    [MitLoadingView showErrorWithStatus:@"新功能，敬请期待"];
+    [MitLoadingView showErrorWithStatus:@"새로운 기능，기대해 주세요"];
     return;
 //    NSArray *array = @[@"40%",@"60%",@"80%",@"100%"];
 //    @weakify(self)
@@ -476,7 +476,7 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (IBAction)shutDownBtnAction:(id)sender {
-    [self showSheetWithItems:@[@"立即关机",@"10分钟后",@"30分钟后",@"60分钟后",@"取消定时"] DestructiveItem:nil CancelTitle:@"确定" WithBlock:^(int selectIndex) {
+    [self showSheetWithItems:@[@"바로 종료",@"10분후",@"30분후",@"60분후",@"정해진 시간에 취소"] DestructiveItem:nil CancelTitle:@"선택" WithBlock:^(int selectIndex) {
         int time = 0;
         switch (selectIndex) {
             case 0:{
@@ -515,8 +515,8 @@
     [RBNetworkHandle deleteAlarmWithID:self.alarmID Block:^(id res) {
         @strongify(self);
         if ([[res objectForKey:@"result"] integerValue] == 0) {
-            self.closeTimerLabel.text = @"关机";
-            [MitLoadingView showSuceedWithStatus:@"取消成功"];
+            self.closeTimerLabel.text = @"종료";
+            [MitLoadingView showSuceedWithStatus:@"취소성공"];
         }
         else{
             [MitLoadingView showErrorWithStatus:RBErrorString(res)];
@@ -530,8 +530,8 @@
             NSDictionary *dic = [res objectForKey:@"data"];
             self.alarmID = [NSString stringWithFormat:@"%@", [dic objectForKey:@"alarmId"]];
             NSString *closeStr = [self timeWithTimeIntervalString:[[NSDate date] timeIntervalSince1970]+time*60];
-            self.closeTimerLabel.text = [NSString stringWithFormat:@"%@关机",closeStr];
-            [MitLoadingView showSuceedWithStatus:[NSString stringWithFormat:@"%d分钟后关机",time]];
+            self.closeTimerLabel.text = [NSString stringWithFormat:@"%@종료",closeStr];
+            [MitLoadingView showSuceedWithStatus:[NSString stringWithFormat:@"%d분후 종료",time]];
         }
         else{
             [MitLoadingView showErrorWithStatus:RBErrorString(res)];
@@ -542,7 +542,7 @@
     [MitLoadingView showWithStatus:NSLocalizedString( @"is_loading", nil)];
     [RBNetworkHandle shutDownCtrlWithBlock:^(id res) {
         if ([[res objectForKey:@"result"] integerValue] == 0) {
-            [MitLoadingView showSuceedWithStatus:@"立即关机"];
+            [MitLoadingView showSuceedWithStatus:@"바로 종료"];
         }
         else{
             [MitLoadingView showErrorWithStatus:RBErrorString(res)];

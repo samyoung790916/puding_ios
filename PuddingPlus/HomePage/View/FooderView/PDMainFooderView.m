@@ -34,11 +34,11 @@
     }else if(index == 1){
         cellView.tag = ButtonTypeVideo;
         [cellView.buttonAction setImage:[UIImage imageNamed:@"ic_bottom_spth"] forState:UIControlStateNormal];
-        cellView.desLable.text = @"远程看护";
+        cellView.desLable.text = @"원격진료";
     }else if(index == 2){
         cellView.tag = ButtonTypeClass;
         [cellView.buttonAction setImage:[UIImage imageNamed:@"ic_bottom_kcb"] forState:UIControlStateNormal];
-        cellView.desLable.text = @"布丁课表";
+        cellView.desLable.text = @"푸딩수업표";
     }else if(index == 3){
         cellView.tag = ButtonTypeData;
         [cellView.buttonAction setImage:[UIImage imageNamed:@"ic_bottom_bdyx"] forState:UIControlStateNormal];

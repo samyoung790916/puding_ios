@@ -308,7 +308,7 @@
                     NSTimeInterval time = [RBNetworkHandle getCurrentTimeInterval];
                     NSTimeInterval selectDateTime = [selectDate timeIntervalSince1970];
                     if (selectDateTime>time) {
-                        [MitLoadingView showErrorWithStatus:NSLocalizedString( @"宝宝生日不能大于今天", nil)];
+                        [MitLoadingView showErrorWithStatus:NSLocalizedString( @"아이 생일이 오늘 날짜를 초과할 수 없습니다.", nil)];
                     }
                     else{
                         NSDateFormatter *format=[[NSDateFormatter alloc] init];

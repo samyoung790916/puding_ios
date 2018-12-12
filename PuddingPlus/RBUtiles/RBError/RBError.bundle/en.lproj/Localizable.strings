@@ -1,7 +1,7 @@
 "RB_Error_String_1" = "offline";
-"RB_Error_String_2" = "数据库库访问失败";
-"RB_Error_String_3" = "数据访问失败（数据库连接断开），或者sql语句执行失败等";
-"RB_Error_String_4" = "数据库更新失败： 可能是没有找到符合条件的行或者更新的值和原先的值相同";
+"RB_Error_String_2" = "데이터베이스 엑세스 실패";
+"RB_Error_String_3" = "데이터 액세스에 실패했습니다 (데이터베이스 연결이 끊어졌습니다). 또는 SQL 문장을 실행하지 못했습니다.";
+"RB_Error_String_4" = "데이터베이스 업데이트 실패 : 적합한 행이 없거나 업데이트 된 값이 원래 값과 동일 할 수 있습니다.";
 "RB_Error_String_5" = "数据库查询没有找到符合条件的行";
 "RB_Error_String_9" = "服务器发生错误，需要重新调用接口（暂不支持）";
 "RB_Error_String_10" = "请求串不是合法的json格式字符串";

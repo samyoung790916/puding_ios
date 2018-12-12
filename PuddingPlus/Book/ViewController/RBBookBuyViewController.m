@@ -55,7 +55,7 @@
 
 - (void)updateModle{
     self.titleLable.text = _modle.name;
-    self.lookInfoLabel.text = [NSString stringWithFormat:@"%d个宝宝看过",[_modle.babysNums intValue]];
+    self.lookInfoLabel.text = [NSString stringWithFormat:@"%d아이가 본것들",[_modle.babysNums intValue]];
     self.bookDetailView.attributedText = [self formatDetailString: _modle.des];
     [self.headImageView setImageWithURL:[NSURL URLWithString:_modle.pictureBig] placeholder:[UIImage imageNamed:@"ic_picturebooks_details_lack"]];
   
@@ -191,7 +191,7 @@
         lable.textColor = [UIColor whiteColor];
         lable.font = [UIFont systemFontOfSize:14];
         [view addSubview:lable];
-        lable.text = NSLocalizedString(@"book_detail", @"书籍详情");
+        lable.text = NSLocalizedString(@"book_detail", nil);
 
         [lable mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(view.mas_centerX);

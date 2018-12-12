@@ -40,8 +40,8 @@
     self.wifiPsdTxtField.hidden = NO;
     self.onButton.hidden = NO;
 
-    self.titleLable.text = @"输入机器人需要连接的WIFI信息";
-    self.desLable.text = @"暂不支持连接5GWiFi\n暂不支持连接的wifi名称有中文";
+    self.titleLable.text = @"로봇에 필요한 와이파이 정보 입력";
+    self.desLable.text = @"잠시 5G 와이파이 연결을 지원하지 않습니다.";
     
     [self.wifiNameTxtField setText:self.connectWifiName];
     [self sepView];
@@ -68,7 +68,7 @@
     if (!_onButton) {
         UIButton *btn = [UIButton buttonWithType: UIButtonTypeCustom];
         btn.frame = CGRectMake(SX(kEdgePacing), SC_HEIGHT - SY(170), self.view.width - 2*SX(kEdgePacing), SX(kTxtHeight));
-        [btn setTitle:@"连接WiFi" forState:UIControlStateNormal];
+        [btn setTitle:@"와이파이 연결" forState:UIControlStateNormal];
         btn.backgroundColor = mRGBToColor(0x00cd62);
         btn.layer.cornerRadius = (CGFloat) (btn.height *0.5);
         btn.layer.masksToBounds = true;
@@ -175,7 +175,7 @@ static CGFloat kTxtHeight = 45;
 
 - (void)connectWifiAction{
     if ([self.wifiNameTxtField.text mStrLength] == 0) {
-        [MitLoadingView showErrorWithStatus:@"请输入WIFI名称"];
+        [MitLoadingView showErrorWithStatus:@"와이파이 이름을 입력해주세요"];
         return;
     }
 
@@ -192,7 +192,7 @@ static CGFloat kTxtHeight = 45;
                 self.view.userInteractionEnabled = YES;
             });
         }else{
-            [MitLoadingView showErrorWithStatus:@"请检查热点是否连接"];
+            [MitLoadingView showErrorWithStatus:@"핫스팟이 녀결되어 있는 확인해주세요"];
         }
     }];
 

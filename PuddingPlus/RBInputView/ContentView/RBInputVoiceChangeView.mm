@@ -111,7 +111,7 @@ typedef NS_ENUM(NSInteger,PDAudioRecordState) {
     [self addSubview:girlBtn];
     [girlBtn.imageContent setImage:[UIImage imageNamed:@"btn_loli_n"] forState:UIControlStateNormal];
     [girlBtn.imageContent setImage:[UIImage imageNamed:@"btn_loli_p"] forState:UIControlStateHighlighted];
-    girlBtn.titleContent.text = @"萝莉";
+    girlBtn.titleContent.text = @"롤리타";
     girlBtn.tag = PDVoiceChangeTypeGirl;
     [girlBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self.mas_centerY);
@@ -133,7 +133,7 @@ typedef NS_ENUM(NSInteger,PDAudioRecordState) {
     
     [monsterBtn.imageContent setImage:[UIImage imageNamed:@"btn_monster_n"] forState:UIControlStateNormal];
     [monsterBtn.imageContent setImage:[UIImage imageNamed:@"btn_monster_p"] forState:UIControlStateHighlighted];
-    monsterBtn.titleContent.text = @"搞怪";
+    monsterBtn.titleContent.text = @"엽기";
     monsterBtn.tag = PDVoiceChangeTypeMonster;
     [monsterBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(girlBtn.mas_top);
@@ -146,7 +146,7 @@ typedef NS_ENUM(NSInteger,PDAudioRecordState) {
     [self addSubview:uncleBtn];
     [uncleBtn.imageContent setImage:[UIImage imageNamed:@"btn_uncle_n"] forState:UIControlStateNormal];
     [uncleBtn.imageContent setImage:[UIImage imageNamed:@"btn_uncle_p"] forState:UIControlStateHighlighted];
-    uncleBtn.titleContent.text = @"萌叔";
+    uncleBtn.titleContent.text = @"맹 아저씨";
     uncleBtn.tag = PDVoiceChangeTypeUncle;
     [uncleBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(girlBtn.mas_top);
@@ -159,7 +159,7 @@ typedef NS_ENUM(NSInteger,PDAudioRecordState) {
     [self addSubview:originBtn];
     [originBtn.imageContent setImage:[UIImage imageNamed:@"btn_native_n"] forState:UIControlStateNormal];
     [originBtn.imageContent setImage:[UIImage imageNamed:@"btn_native_p"] forState:UIControlStateHighlighted];
-    originBtn.titleContent.text = @"原声";
+    originBtn.titleContent.text = @"오리지널 사운드";
     originBtn.tag = PDVoiceChangeTypeOrigin;
     self.selectChageType = [self currVoiceChangeType];
     PDVoiceButton *voiceBtn= [self viewWithTag:self.selectChageType];
@@ -234,13 +234,13 @@ typedef NS_ENUM(NSInteger,PDAudioRecordState) {
 
 -(void)updateBottomRecordView{
     if (self.recordState == PDAudioStaterReadyPlay) {
-        self.tipLabel.text = @"点击任意头像进行试听";
+        self.tipLabel.text = @"듣고싶은 아이콘을 클릭하세요";
         self.recordBtn.hidden = YES;
         self.sendBtn.hidden = NO;
         self.backBtn.hidden = NO;
         
     }else{
-        self.tipLabel.text = @"选择变声效果";
+        self.tipLabel.text = @"음성 변성 효과 선택";
         self.recordBtn.hidden = NO;
         self.sendBtn.hidden = YES;
         self.backBtn.hidden = YES;
@@ -517,7 +517,7 @@ typedef NS_ENUM(NSInteger,PDAudioRecordState) {
         if (self.totalDuration==60) {
             if(self.InputVoiceErrorBlock){
                 RBVoiceError  error ;
-                error.errorString = (char *)[@"最多录音一分钟" UTF8String];
+                error.errorString = (char *)[@"최대 녹음 1분" UTF8String];
                 error.errorType = RBVoiceLongTime;
                 self.InputVoiceErrorBlock(error);
             }
@@ -526,7 +526,7 @@ typedef NS_ENUM(NSInteger,PDAudioRecordState) {
         self.recordState = PDAudioStateReadyRecord;
         if(self.InputVoiceErrorBlock){
             RBVoiceError error ;
-            error.errorString = (char *)[@"说话时间太短" UTF8String];
+            error.errorString = (char *)[@"말하기 시간이 너무 짧습니다." UTF8String];
             error.errorType = RBVoiceSortTime;
             self.InputVoiceErrorBlock(error);
         }

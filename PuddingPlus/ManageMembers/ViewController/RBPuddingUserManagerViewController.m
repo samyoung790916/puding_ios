@@ -31,7 +31,7 @@
     [super viewDidLoad];
     [self initialNav];
     
-    UITableView *vi = [[UITableView alloc]initWithFrame:CGRectMake(0, NAV_HEIGHT, SC_WIDTH, SC_HEIGHT-NAV_HEIGHT) style:UITableViewStylePlain];
+    UITableView * vi = [[UITableView alloc]initWithFrame:CGRectMake(0, NAV_HEIGHT, SC_WIDTH, SC_HEIGHT-NAV_HEIGHT) style:UITableViewStylePlain];
     vi.delegate = self;
     vi.dataSource = self;
     vi.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -59,7 +59,6 @@
         @strongify(self);
         if(res && [[res objectForKey:@"result"] intValue] == 0){
             RBDeviceModel * modle = [RBDeviceModel modelWithJSON:[res objectForKey:@"data"]] ;
-           
             [self loadData:modle.users];
         }else{
             [MitLoadingView showErrorWithStatus:RBErrorString(res)];
@@ -80,6 +79,7 @@
         if([RBDataHandle.loginData.userid isEqual:modle.userid] && [modle.manager boolValue]){
             _selfIsManager = YES;
         }
+    
     }
     [self.userArray removeAllObjects];
     [self.userArray addObjectsFromArray:array];
@@ -276,7 +276,7 @@
     RBDeviceUser * modle = [self.userArray mObjectAtIndex:index];
     self.selectedNumber = index;
     
-    [self tipAlter:[NSString stringWithFormat:NSLocalizedString( @"whether_set_xx_admin", nil),modle.name] ItemsArray:@[@"取消",@"确定"] :^(int index) {
+    [self tipAlter:[NSString stringWithFormat:NSLocalizedString( @"whether_set_xx_admin", nil),modle.name] ItemsArray:@[@"취소",@"확인"] :^(int index) {
         if (index == 1) {
             [MitLoadingView showWithStatus:NSLocalizedString( @"is_editing", nil)];
             [RBNetworkHandle changeCtrlManager:modle.userid WithBlock:^(id res) {
