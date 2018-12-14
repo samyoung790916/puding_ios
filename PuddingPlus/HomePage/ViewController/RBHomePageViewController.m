@@ -231,7 +231,7 @@
     
     [_contentView addSubview:_webView];
     
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://35.201.168.137:8081"]];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://35.194.159.13:8081"]];
     [_webView loadRequest:request];
     
     

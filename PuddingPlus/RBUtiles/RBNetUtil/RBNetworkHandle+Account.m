@@ -200,6 +200,8 @@ NSString * const md5hex = @"geG^_s[3Kl";
 }
 #pragma mark 用户：- 上传 PushID
 + (RBNetworkHandle *)updatePushID:(NSString *)pushID{
+
+    
     NSDictionary * dict = @{@"action":@"resetpushid",@"data":@{@"pushid":pushID}};
     NSString * urlStr = [RBNetworkHandle getInterUrl:RB_URL_HOST Path:RB_URL_PATH_UPDATE_USER_INFO];
     [RBNetworkHandle getNetDataWihtPara:dict URLStr:urlStr Block:^(id res) {
@@ -209,6 +211,9 @@ NSString * const md5hex = @"geG^_s[3Kl";
             NSLog(@"上传 pushID 失败");
         }
     }];
+
+    
+    
     return  nil;
 }
 

@@ -26,6 +26,9 @@ PODS:
   - Firebase/Core (4.13.0):
     - FirebaseAnalytics (= 4.2.0)
     - FirebaseCore (= 4.0.20)
+  - Firebase/Messaging (4.13.0):
+    - Firebase/Core
+    - FirebaseMessaging (= 2.2.0)
   - FirebaseAnalytics (4.2.0):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
@@ -35,11 +38,19 @@ PODS:
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
   - FirebaseInstanceID (2.0.10):
     - FirebaseCore (~> 4.0)
+  - FirebaseMessaging (2.2.0):
+    - FirebaseAnalytics (~> 4.1)
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.5)
   - FLAnimatedImage (1.0.12)
   - FMDB (2.7.2):
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
   - GoogleToolboxForMac/Defines (2.1.4)
+  - GoogleToolboxForMac/Logger (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
   - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
     - GoogleToolboxForMac/Defines (= 2.1.4)
   - IQKeyboardManager (3.3.7)
@@ -55,6 +66,7 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - Protobuf (3.6.1)
   - PuddingVideoSDK (1.6.2):
     - PuddingVideoSDK/RBVideo (= 1.6.2)
     - PuddingVideoSDK/RBVideoFilter (= 1.6.2)
@@ -88,6 +100,7 @@ DEPENDENCIES:
   - CocoaAsyncSocket (~> 7.6.3)
   - CocoaLumberjack (~> 3.0.0)
   - Firebase/Core
+  - Firebase/Messaging
   - FLAnimatedImage
   - IQKeyboardManager
   - LKDBHelper
@@ -119,6 +132,7 @@ SPEC REPOS:
     - FirebaseAnalytics
     - FirebaseCore
     - FirebaseInstanceID
+    - FirebaseMessaging
     - FLAnimatedImage
     - FMDB
     - GoogleToolboxForMac
@@ -128,6 +142,7 @@ SPEC REPOS:
     - Masonry
     - MJRefresh
     - nanopb
+    - Protobuf
     - RBNetwork
     - ReactiveCocoa
     - ReactiveViewModel
@@ -159,6 +174,7 @@ SPEC CHECKSUMS:
   FirebaseAnalytics: 7ef69e76a5142f643aeb47c780e1cdce4e23632e
   FirebaseCore: 90cb1c53d69b556f112a1bf72b5fcfaad7650790
   FirebaseInstanceID: 8d20d890d65c917f9f7d9950b6e10a760ad34321
+  FirebaseMessaging: 75cdb862e86c30e0913a2ff307e48d49357c5b73
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
@@ -168,6 +184,7 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
   PuddingVideoSDK: 58902e18e74b3314a572d5c8dcaafd6a9bdaa2fc
   RBAlterView: 23486486108ca571c870231f5656549a5e50b836
   RBLogManager: 0e2632e88e30cff87bafedb15f4a11b58bb97171
@@ -181,6 +198,6 @@ SPEC CHECKSUMS:
   UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: ac00322dcea392ebb463740cb08e9762a609e593
+PODFILE CHECKSUM: 71d113524ca3becd8a1306d5f67d3be936e63704
 
 COCOAPODS: 1.5.3

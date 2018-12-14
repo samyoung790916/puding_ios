@@ -27,6 +27,7 @@ target 'PuddingPlus' do
     pod 'TheAmazingAudioEngine'
     pod 'CocoaAsyncSocket', '~> 7.6.3'
     pod 'Firebase/Core'
+    pod 'Firebase/Messaging'
 
 end
 
