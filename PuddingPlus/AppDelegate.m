@@ -79,7 +79,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
         });
     }
     [[RBMessageHandle sharedManager] setUpMessageHelper];
-    [self setupXHLaunchAd];
+ //   [self setupXHLaunchAd];
 
     return YES;
 }

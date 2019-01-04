@@ -85,7 +85,14 @@ static NSString * kFamilyCache_Name = @"FamilyCache_Name";
     }
     [dataDict setObject:mainCtrID forKey:@"mainctl"];
     NSString * devName = [RBNetworkHandle getDevName];
-    NSString * bundleId  = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString*)kCFBundleIdentifierKey];
+    //NSString * bundleId  = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString*)kCFBundleIdentifierKey];
+    
+    //samyoung79
+    //NSString * bundleId  = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString*)kCFBundleIdentifierKey];
+    NSString * bundleId  = @"com.roobo.pudding1s";
+    
+    
+    
     NSString * version  = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString*)kCFBundleVersionKey];
     NSString * appversion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     NSDictionary * appinfo = @{@"via":devName,@"app":[NSString stringWithFormat:@"%@.ios",bundleId],@"cver":@([version intValue]),@"aver":appversion,@"osver":@(0),@"local":@"zh_CN",@"ch":[RBNetworkHandle getChannelId]};
@@ -115,7 +122,15 @@ static NSString * kFamilyCache_Name = @"FamilyCache_Name";
     [dataDict setObject:[NSNumber numberWithUnsignedInteger:startID] forKey:@"page"];
     [dataDict setObject:mainCtrID forKey:@"mainctl"];
     NSString * devName = [RBNetworkHandle getDevName];
-    NSString * bundleId  = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString*)kCFBundleIdentifierKey];
+    //NSString * bundleId  = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString*)kCFBundleIdentifierKey];
+    
+    
+    //samyoung79
+    //NSString * bundleId  = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString*)kCFBundleIdentifierKey];
+    NSString * bundleId  = @"com.roobo.pudding1s";
+    
+    
+    
     NSString * version  = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString*)kCFBundleVersionKey];
     NSString * appversion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     NSDictionary * appinfo = @{@"via":devName,@"app":[NSString stringWithFormat:@"%@.ios",bundleId],@"cver":@([version intValue]),@"aver":appversion,@"osver":@(0),@"local":@"zh_CN",@"ch":[RBNetworkHandle getChannelId]};

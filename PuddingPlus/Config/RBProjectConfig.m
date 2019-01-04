@@ -174,6 +174,10 @@
     NSString * version  = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString*)kCFBundleVersionKey];
     NSString * appversion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     
+    //samyoung79
+    //NSString * bundleId  = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString*)kCFBundleIdentifierKey];
+   // NSString * bundleId  = @"com.roobo.pudding1s";
+    
     NSLog(@"version%@",version);
     NSLog(@"appversion%@",appversion);
     config.defaultParameters =@{@"data":@{

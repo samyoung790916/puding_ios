@@ -19,9 +19,21 @@
     [resultDict removeObjectForKey:@"data"];
     NSMutableDictionary * dataDict = [[NSMutableDictionary alloc] initWithDictionary:[dict mObjectForKey:@"data"]];
     NSString * devName = [RBNetworkHandle getDevName];
-    NSString * bundleId  = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString*)kCFBundleIdentifierKey];
+    
+    //samyoung79
+    //NSString * bundleId  = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString*)kCFBundleIdentifierKey];
+    NSString * bundleId  = @"com.roobo.pudding1s";
+    
+    
+    
     NSString * version  = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString*)kCFBundleVersionKey];
     NSString * appversion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    
+    
+
+    
+    
+    
     NSDictionary * appinfo = @{@"via":devName,@"app":[NSString stringWithFormat:@"%@.ios",bundleId],@"cver":@([version intValue]),@"aver":appversion,@"osver":@(0),@"local":@"zh_CN",@"ch":[RBNetworkHandle getChannelId]};
     dataDict[@"app"] = appinfo;
     NSString * userid = RBDataHandle.loginData.userid;
