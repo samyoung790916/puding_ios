@@ -411,64 +411,9 @@ didReceiveNotificationResponse:(UNNotificationResponse *)response
                                       stringByReplacingOccurrencesOfString: @"<" withString: @""]
                                      stringByReplacingOccurrencesOfString: @">" withString: @""]
                                     stringByReplacingOccurrencesOfString: @" " withString: @""];
-  
     
     
-        [self request:deviceTokenStr completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-    
-            NSError * jsonError;
-            NSDictionary * responseJson = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&jsonError];
-    
-            if(jsonError != nil)
-            return;
-    
-        }];
-}
-
--(void)request:(NSString *)strPushToken completionHandler:(void (^)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error)) completeBlock{
-
-    NSURL * url = [[NSURL alloc]initWithString:@"http://35.234.43.199:8080/reg_pushToken"];
-    NSURLSessionConfiguration * config = [NSURLSessionConfiguration defaultSessionConfiguration];
-    NSURLSession * session = [NSURLSession sessionWithConfiguration:config];
-
-    NSMutableURLRequest * request = [[NSMutableURLRequest alloc]initWithURL:url];
-    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    request.HTTPMethod = @"POST";
-
-
-    NSDictionary * dictionary;
-    dictionary = @{@"TRANSACTION_TOKEN":strPushToken, @"DEVICE_VALUE":@"I"};
-
-    NSError * error = nil;
-    NSData * data = [NSJSONSerialization dataWithJSONObject:dictionary options:kNilOptions error:&error];
-
-    if(!error)
-    {
-        NSURLSessionUploadTask * uploadTask = [session uploadTaskWithRequest:request fromData:data completionHandler:completeBlock];
-        [uploadTask resume];
-    }
-
-
-    /*
-     NSURL * url = [NSURL URLWithString:@"https://coin8.soomcoin.net/req_accumulate"];
-     NSURLSessionConfiguration * config = [NSURLSessionConfiguration defaultSessionConfiguration];
-     NSURLSession * session = [NSURLSession sessionWithConfiguration:config];
-
-     NSMutableURLRequest * request = [[NSMutableURLRequest alloc] initWithURL:url];
-     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-     request.HTTPMethod = @"POST";
-
-     NSDictionary * dictionary;
-     dictionary = @{@"recomd":recomdCode};
-
-     NSError * error = nil;
-     NSData * data = [NSJSONSerialization dataWithJSONObject:dictionary options:kNilOptions error:&error];
-     if (!error) {
-     NSURLSessionUploadTask * uploadTask = [session uploadTaskWithRequest:request fromData:data completionHandler:completeBlock];
-     [uploadTask resume];
-     }
-     */
-
+    self.strDeviceToken = deviceTokenStr;
 }
 
 

@@ -39,7 +39,6 @@
     //参数
     NSDictionary * resultDict = nil;
     resultDict =  [RBNetworkHandle getCommonDict:dict NeedAppid:!removeAppid];
-
     
     //地址
     NSString * urlStr = [NSString stringWithFormat:@"%@",url];
@@ -115,7 +114,6 @@
 
 + (RBNetworkHandle *)uploadNetDataWihtPara:(NSDictionary *)dict URLStr:(NSString *)url filePath:(NSString*)filePath Block:(RBNetworkHandleBlock) block
 {
-    
     //参数
     NSDictionary * resultDict = [RBNetworkHandle getCommonDict:dict NeedAppid:NO];
     //地址
