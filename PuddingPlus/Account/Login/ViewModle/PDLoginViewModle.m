@@ -87,7 +87,7 @@
 
 -(void)request:(NSString *)strPushToken UserId:(NSString *)strUserId completionHandler:(void (^)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error)) completeBlock{
     
-    NSURL * url = [[NSURL alloc]initWithString:@"http://35.234.43.199:8080/puddingkong/reg_pushToken"];
+    NSURL * url = [[NSURL alloc]initWithString:@"http://35.201.238.165:8080/puddingkong/reg_pushToken"];
     NSURLSessionConfiguration * config = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession * session = [NSURLSession sessionWithConfiguration:config];
     

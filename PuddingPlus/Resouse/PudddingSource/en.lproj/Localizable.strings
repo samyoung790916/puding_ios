@@ -474,6 +474,7 @@
 "modify_my_nickname"="닉네임 수정";
 "change_to_an_adminstrator"="관리자로 변경";
 "change_nickname"="닉네임 수정";
+"privacy_input"="개인정보 입력";
 "change_remarkname"="메모 이름 수정";
 "invitation_member"="회원 초대";
 "Selected sequence number"="선택한 일련번호 = %d";

@@ -36,7 +36,11 @@
     /** 初始化导航栏 */
     [self initialNav];
     /** 设置标题数据源 */
-    self.titleArr = @[NSLocalizedString( @"change_head_portrait", nil),NSLocalizedString( @"change_nickname", nil),NSLocalizedString( @"modify_password", nil),NSLocalizedString( @"change_telephonenumber", nil)];
+    self.titleArr = @[NSLocalizedString( @"change_head_portrait", nil),
+                      NSLocalizedString( @"change_nickname", nil),
+                      NSLocalizedString( @"modify_password", nil),
+                      NSLocalizedString( @"change_telephonenumber", nil),
+                      NSLocalizedString( @"privacy_input", nil)];
     
     /** 列表 */
     [self.mainTable registerClass:[PDPersonalCenterCell class] forCellReuseIdentifier:NSStringFromClass([PDPersonalCenterCell class])];

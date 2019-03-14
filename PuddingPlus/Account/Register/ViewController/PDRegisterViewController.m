@@ -227,7 +227,7 @@ NSString * verifyCode = @"1234";
         make.top.mas_equalTo(self.navView.mas_bottom).offset(20);
         make.height.mas_equalTo(SY(37));
     }];
-    //[nationBackView addTarget:self action:@selector(nationSelectHandle) forControlEvents:UIControlEventTouchUpInside]; // samyoung79 국가 선택 없다...
+    [nationBackView addTarget:self action:@selector(nationSelectHandle) forControlEvents:UIControlEventTouchUpInside]; // samyoung79 국가 선택 없다...
     UIView *seraLine = [UIView new];
     [nationBackView addSubview:seraLine];
     seraLine.backgroundColor = UIColorHex(0xd3d6db);

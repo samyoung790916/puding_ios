@@ -337,16 +337,16 @@ static UIButton * btCustom = nil;
         make.top.mas_equalTo(self.nationCodeLab.mas_top);
         make.height.mas_equalTo(self.nationCodeLab.mas_height);
     }];
- //   [nationBackView addTarget:self action:@selector(nationSelectHandle) forControlEvents:UIControlEventTouchUpInside];
-//    UIView *seraLine = [UIView new];
-//    [nationBackView addSubview:seraLine];
-//    seraLine.backgroundColor = UIColorHex(0xd3d6db);
-//    [seraLine mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.mas_equalTo(61);
-//        make.top.mas_equalTo(0);
-//        make.bottom.mas_equalTo(0);
-//        make.width.mas_equalTo(1);
-//    }];
+    [nationBackView addTarget:self action:@selector(nationSelectHandle) forControlEvents:UIControlEventTouchUpInside];
+    UIView *seraLine = [UIView new];
+    [nationBackView addSubview:seraLine];
+    seraLine.backgroundColor = UIColorHex(0xd3d6db);
+    [seraLine mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(61);
+        make.top.mas_equalTo(0);
+        make.bottom.mas_equalTo(0);
+        make.width.mas_equalTo(1);
+    }];
     
 
 //    UILabel *nationNameLab = [UILabel new];
